@@ -86,7 +86,7 @@
       <article class="hold">
         <span class="lbl">Healthcare providers</span>
         <strong class="fig" data-count="9.49" data-suffix="mn">9.49mn</strong>
-        <p>Every licensed prescriber and healthcare organisation in the country, with specialty, credentials and location.</p>
+        <p>Every prescriber and healthcare organisation enumerated on the US national provider registry, with specialty, credentials and location.</p>
         <span class="vin">2005 to 2026</span>
       </article>
       <article class="hold">
@@ -128,7 +128,7 @@
       <article class="hold">
         <span class="lbl">Insurance plans</span>
         <strong class="fig" data-count="11668">11,668</strong>
-        <p>Drug plans whose medicine coverage is held, across commercial and managed-care books.</p>
+        <p>Drug plans whose medicine coverage is held, across commercial and Part D books.</p>
         <span class="vin">2024 to 2026</span>
       </article>
       <article class="hold">
@@ -139,7 +139,7 @@
       </article>
     </div>
 
-    <p class="form-note" style="margin-top:18px">Measured 2026-08-13. Each figure was counted directly from the held data, by record counts over the original files or read-only aggregations. Nothing is estimated. <b>Delivered as</b> 1,160 original files · 323.9mn records · 93 GB · 177 datasets covering 1939 to 2028, exactly as received from their sources.</p>
+    <p class="form-note" style="margin-top:18px">Measured 2026-08-13. Each figure was counted directly from the held data, by record counts over the original files or read-only aggregations. Nothing is estimated. <b>Held as</b> 1,160 original files · 323.9mn records · 93 GB · 177 datasets covering 1939 to 2028, read exactly as received, and delivered harmonised onto one molecule key.</p>
   </div>
 </section>
 
@@ -149,11 +149,11 @@
     <div class="split">
       <div>
         <p class="eyebrow">What every package includes</p>
-        <h2>Files you can load, and the proof that they are right.</h2>
+        <h2>Files you can load, and the record of every check they passed.</h2>
         <p class="lede">A package is the same resolved data the lenses read, without the lenses. It arrives as files, with the key that joins them and the paperwork that says where each record came from.</p>
         <ul class="ticks">
           <li><b>Parquet and CSV files.</b> A single DuckDB file on request, so one open gives you every table.</li>
-          <li><b>Molecule crosswalk.</b> Every record carries the same canonical molecule key, so tables join on one column.</li>
+          <li><b>Molecule crosswalk.</b> Every drug-level record carries the same canonical molecule key, so drug tables join on one column; provider, plan, site and population tables keep their own registry keys and join through the crosswalk.</li>
           <li><b>Vintage manifest.</b> Names each register release in the package, with the period it covers.</li>
           <li><b>Integrity report.</b> Record counts per table, key coverage, null checks and the checks each table passed.</li>
           <li><b>Refresh as each register is released.</b> New files, a new manifest, a new report. Nothing is re-estimated.</li>
@@ -216,7 +216,7 @@
         <span class="ico"><svg viewBox="0 0 24 24"><path d="M3 21V9l6 4V9l6 4V4h6v17H3z"/></svg></span>
         <span class="card-tag">Package 04</span>
         <h3>Quality, inspections &amp; facilities</h3>
-        <p>Quality, 24 datasets and 1.1mn records: inspections, findings, warning letters, quality measures. Facilities, 5 datasets and 2.0mn records: hospitals, care sites, cost reports. Devices, 6 datasets and 5.7mn records: device registries.</p>
+        <p>Quality, 24 datasets and 1.1mn records: inspections, findings, warning letters, quality measures. Facilities, 5 datasets and 2.0mn records: registered drug manufacturing sites, hospitals, care sites, cost reports. Devices, 6 datasets and 5.7mn records: device registries.</p>
         <ul class="chips mt-md">
           <li><b>35</b> datasets</li><li><b>8.8mn</b> records</li><li>grain: inspection · finding · site · device listing</li>
         </ul>
@@ -240,7 +240,7 @@
         <h3>Research &amp; population</h3>
         <p>Research, 1 dataset and 19.7mn records: the clinical trial registry with sponsor, phase, condition and site. Population, 1 dataset and 37k records: population counts to put prevalence and demand on a denominator.</p>
         <ul class="chips mt-md">
-          <li><b>2</b> datasets</li><li><b>19.7mn</b> records</li><li>grain: trial record · population by area and year</li>
+          <li><b>2</b> datasets</li><li><b>19.7mn</b> records</li><li>grain: registry records across 587,105 studies · population by area and year</li>
         </ul>
         <a class="more" href="contact.html">Request this package →</a>
       </article>
@@ -271,7 +271,7 @@
         <span class="ico amber"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6"/><path d="M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg></span>
         <span class="card-tag">Package 09</span>
         <h3>The full Atlas</h3>
-        <p>All twelve families in one delivery: every dataset the lenses read, with the molecule crosswalk that joins them, one manifest and one integrity report covering the whole set.</p>
+        <p>All twelve Atlas families in one delivery, with the molecule crosswalk that joins them, one manifest and one integrity report covering the whole set. The two trade packages are taken separately.</p>
         <ul class="chips mt-md">
           <li><b>177</b> datasets</li><li><b>323.9mn</b> records</li><li><b>1939 to 2028</b></li><li>grain: as each family above</li>
         </ul>
@@ -364,7 +364,7 @@
       <article class="use"><b>USFDA plant tracking</b><span>Follow a manufacturing site's inspection history, findings, outcomes and warning letters over time, and the products registered behind it.</span><em>Packages 04 · 03</em></article>
       <article class="use"><b>Generic entry timing</b><span>Read patent and exclusivity expiry against approvals and filings to date the window in which a generic can actually enter.</span><em>Package 03</em></article>
       <article class="use"><b>Competitor analysis</b><span>Who else holds an approval, files a drug master file, ships the product or takes the spend, molecule by molecule and company by company.</span><em>Packages 03 · 01 · 07</em></article>
-      <article class="use"><b>Product analysis</b><span>One product end to end: approvals, strengths, labellers, coverage, pricing, spend and shipments, all resolved onto a single key.</span><em>Package 09</em></article>
+      <article class="use"><b>Product analysis</b><span>One product end to end: approvals, strengths, labellers, coverage, pricing, spend and shipments, all resolved onto a single key.</span><em>Packages 09 · 07</em></article>
       <article class="use"><b>Disease landscape tracking</b><span>Trials, treated population, prescribing and spend for one condition, with the pipeline and the sponsors behind it.</span><em>Packages 06 · 01</em></article>
       <article class="use"><b>Biosimilar assessment</b><span>Reference-product spend, exclusivity, uptake and payer coverage for a biologic, before the biosimilar decision is committed.</span><em>Packages 03 · 02 · 01</em></article>
       <article class="use"><b>US market entry strategy</b><span>Shortlist molecules for a generic filing on paid spend, competitor count, entry window and channel, with the evidence attached to each.</span><em>Package 09</em></article>
@@ -373,7 +373,7 @@
       <article class="use"><b>API and supplier sourcing</b><span>Who files the drug master files for a molecule, which sites stand behind them, and which of those carry an import alert.</span><em>Packages 03 · 04</em></article>
       <article class="use"><b>Pricing and channel mix</b><span>What a drug is actually paid for across channels, and how the mix between them moves quarter by quarter.</span><em>Packages 01 · 02</em></article>
       <article class="use"><b>Shortage and recall monitoring</b><span>Which products are in shortage or recalled, since when, on what reason, and who else holds an approval to make them.</span><em>Package 03</em></article>
-      <article class="use"><b>Portfolio prioritisation</b><span>Rank a portfolio or a target list on spend, competition, exclusivity and supply risk, with one method applied to every molecule.</span><em>Package 09</em></article>
+      <article class="use"><b>Portfolio prioritisation</b><span>Spend, competition, exclusivity and inspection history for a portfolio or a target list, on the same fields for every molecule.</span><em>Package 09</em></article>
       <article class="use"><b>Buyer and corridor discovery</b><span>Which companies buy a product, in which markets, at what price and in what quantity, and which corridors are growing.</span><em>Packages 07 · 08</em></article>
       <article class="use"><b>Industry payment mapping</b><span>Which companies pay which clinicians, how much and for what, read alongside what those clinicians prescribe.</span><em>Packages 05 · 01</em></article>
       <article class="use"><b>Policy and price exposure</b><span>Which molecules sit in the path of negotiation and price-cap policy, ranked by the paid spend actually at risk.</span><em>Packages 01 · 02</em></article>
