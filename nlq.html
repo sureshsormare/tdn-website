@@ -45,7 +45,7 @@
   <div class="wrap">
     <p class="eyebrow on-dark">Product 03 · NLQ</p>
     <h1>Ask in English. Get a number you can check.</h1>
-    <p class="lede on-dark">The Ask console turns a plain question into a verified answer. It finds the right tables, writes and checks the SQL, runs it read-only against the same spine the lenses use, and confirms every figure against the rows that came back before you see it.</p>
+    <p class="lede on-dark">The Ask console turns a plain question into a verified answer. It finds the right tables, writes and checks the SQL, runs it read-only against the same spine the lenses use, and confirms every figure against the records that came back before you see it.</p>
     <div class="hero-stats">
       <div class="stat"><strong data-count="657">657</strong><span>verified questions in the library, by persona and by lens</span></div>
       <div class="stat"><strong data-count="32473">32,473</strong><span>drugs indexed for grounding</span></div>
@@ -69,7 +69,7 @@
           <div class="row"><b>retrieve</b><span>molecule: apixaban · registers: drug master files, import alerts</span></div>
           <div class="row"><b>plan</b><span>one step · supplier grain · exclude firms on an import alert</span></div>
           <div class="row"><b>sql</b><span>SELECT only · columns checked against the live catalogue</span></div>
-          <div class="row"><b>execute</b><span>read-only · 0.39 s · 51 rows returned</span></div>
+          <div class="row"><b>execute</b><span>read-only · 0.39 s · 51 records returned</span></div>
           <div class="row"><b>verify</b><span class="ok">✓ every figure below traces to a returned row</span></div>
         </div>
         <div class="ask-a" data-answer style="padding-top:0">
@@ -82,7 +82,7 @@
           <div class="frame-bar"><i></i><i></i><i></i><em>ask console · answered</em><span class="live">live</span></div>
           <img src="assets/shots/nlq/ask.png" alt="Ask console showing the answer for alert-free Indian apixaban suppliers: 51 supplier-DMF records, a summary, bullet points naming Alembic, Morepen and Metrochem, a bar chart of product count by supplier and a donut of share by DMF number" loading="lazy">
         </div>
-        <p class="shot-cap"><b>The same answer in the console.</b> Headline figures, a written summary, the entities named, and charts drawn from the returned rows. Expand “Data &amp; SQL” under any answer to see the query and the rows.</p>
+        <p class="shot-cap"><b>The same answer in the console.</b> Headline figures, a written summary, the entities named, and charts drawn from the returned records. Expand “Data &amp; SQL” under any answer to see the query and the records.</p>
       </div>
     </div>
   </div>
@@ -101,7 +101,7 @@
       <div class="step"><span class="step-n">03</span><div><h3>Write the SQL</h3><p>The query is written against a curated schema with the cross-cutting rules always on: one molecule key, maximum across overlapping registers, never a sum across grains.</p></div></div>
       <div class="step"><span class="step-n">04</span><div><h3>Validate</h3><p>The SQL is parsed, restricted to SELECT, and every column is checked against the live catalogue. A query that fails is repaired once, then refused.</p></div></div>
       <div class="step"><span class="step-n">05</span><div><h3>Execute</h3><p>Read-only, with a timeout and a memory cap on every statement. The service never writes to the warehouse.</p></div></div>
-      <div class="step"><span class="step-n">06</span><div><h3>Verify, then answer</h3><p>A scope guard refuses a number whose SQL dropped a filter the question asked for. A provenance guard checks that every figure in the written answer appears in the returned rows. Only then is the answer shown, with its sources.</p></div></div>
+      <div class="step"><span class="step-n">06</span><div><h3>Verify, then answer</h3><p>A scope guard refuses a number whose SQL dropped a filter the question asked for. A provenance guard checks that every figure in the written answer appears in the returned records. Only then is the answer shown, with its sources.</p></div></div>
     </div>
   </div>
 </section>
@@ -111,7 +111,7 @@
   <div class="wrap">
     <p class="eyebrow">The pipeline</p>
     <h2 class="narrow">Grounded before, checked after.</h2>
-    <p class="lede narrow">Retrieval grounds the question in real entities and real tables before any SQL is written. Verification checks the answer against the rows after it is run. The model sits between two gates it does not control.</p>
+    <p class="lede narrow">Retrieval grounds the question in real entities and real tables before any SQL is written. Verification checks the answer against the records after it is run. The model sits between two gates it does not control.</p>
 
     <div class="frame mt-lg">
       <div class="frame-bar"><i></i><i></i><i></i><em>ask · pipeline, live</em><span class="live">live</span></div>
@@ -155,7 +155,7 @@
         <text class="fx-txt" x="682" y="124">parsed · catalogue-checked</text>
         <text class="fx-txt" x="682" y="142">read-only · capped · timed</text>
         <text class="fx-txt" x="682" y="160">scope guard · provenance guard</text>
-        <text class="fx-txt-g" x="682" y="182">✓ figures trace to rows</text>
+        <text class="fx-txt-g" x="682" y="182">✓ figures trace to records</text>
         <circle class="viz-dot" cx="852" cy="80" r="3" fill="#2ECC8A"/>
 
         <path class="fx-flow green" d="M866,130 C900,130 900,232 866,232"/>
@@ -169,7 +169,7 @@
 
         <line class="fx-rule" x1="40" y1="272" x2="920" y2="272"/>
         <text class="fx-txt" x="40" y="290">the model drafts between two gates it does not control</text>
-        <text class="fx-txt-g" x="920" y="290" text-anchor="end">no number without a row behind it</text>
+        <text class="fx-txt-g" x="920" y="290" text-anchor="end">no number without a record behind it</text>
       </svg>
     </div>
   </div>
@@ -184,7 +184,7 @@
     <div class="grid grid-3 mt-lg">
       <div class="card on-dark"><span class="card-num">01</span><h3>The premise fails</h3><p>The question assumes something the data does not hold, such as a brand that has no generic yet. The console asks which of the things it did find you meant.</p></div>
       <div class="card on-dark"><span class="card-num">02</span><h3>A scope was dropped</h3><p>The SQL lost a filter the question required, a state, a year, a payer. The scope guard refuses the number rather than serve a wider one.</p></div>
-      <div class="card on-dark"><span class="card-num">03</span><h3>A figure has no row</h3><p>The written answer mentions a number that is not in the returned rows. The provenance guard removes it before the answer is shown.</p></div>
+      <div class="card on-dark"><span class="card-num">03</span><h3>A figure has no record</h3><p>The written answer mentions a number that is not in the returned records. The provenance guard removes it before the answer is shown.</p></div>
     </div>
   </div>
 </section>
@@ -203,14 +203,14 @@
       <div class="svc-body">
         <span class="svc-idx">Alongside the lenses</span>
         <h2>Start from a question, or from a screen.</h2>
-        <p class="lede">Every lens has an “ask about this” link that opens the console with the question pre-filled, so a number on screen can be interrogated without leaving it. Every answer has a “Data &amp; SQL” panel, so a number in the console can be traced to its rows.</p>
+        <p class="lede">Every lens has an “ask about this” link that opens the console with the question pre-filled, so a number on screen can be interrogated without leaving it. Every answer has a “Data &amp; SQL” panel, so a number in the console can be traced to its records.</p>
         <ul class="ticks">
           <li><b>Three depths.</b> Standard, detailed and deep-dive change how far the plan goes, not how careful it is.</li>
           <li><b>Follow-ups keep context.</b> The cohort from the last answer is available to the next question.</li>
           <li><b>A golden bank keeps it honest.</b> Hundreds of question, SQL and answer triples are re-run to catch drift when data or models change.</li>
           <li><b>Read-only by construction.</b> The service holds the warehouse open for reading and nothing else.</li>
         </ul>
-        <div class="adds"><b>What this gives you</b>An analyst-grade answer in seconds, with the query and the rows attached, so the number can be defended by someone who was not in the room.</div>
+        <div class="adds"><b>What this gives you</b>An analyst-grade answer in seconds, with the query and the records attached, so the number can be defended by someone who was not in the room.</div>
       </div>
     </div>
   </div>
@@ -220,7 +220,7 @@
 <section class="cta-band gridbg">
   <div class="wrap">
     <h2>Ask it about your molecule.</h2>
-    <p class="lede on-dark">Send one question you would want answered. We will run it on the live console and show you the answer, the query and the rows.</p>
+    <p class="lede on-dark">Send one question you would want answered. We will run it on the live console and show you the answer, the query and the records.</p>
     <div class="btn-row">
       <a class="btn btn-primary" href="contact.html">Request a demo</a>
       <a class="btn btn-ghost on-dark" href="healthcare.html">See the lenses</a>

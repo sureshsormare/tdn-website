@@ -25,6 +25,14 @@ Phase 7 — Enterprise upgrade (2026-09-10, user: "much more modern and enterpri
 - [x] suresh@transdatanexus.com + Mumbai everywhere
 Phase 8 — Three-pillar structure (Consulting · Products · Development)
 - [x] Nav: Products / Data / Consulting / Development; footer columns; contact form options (Data package, Platform development, Consulting)
-- [ ] products.html (overview + comparison), data.html (9 packages, no prices), development.html (platform build), privacy.html, terms.html
-- [ ] QA all pages, push, verify live
+- [x] products.html, data.html, development.html, privacy.html, terms.html
+- [x] QA all pages (12/12 clean), pushed 710cf91, all 12 live 200
 - [ ] Domain: user sets GoDaddy records (README-DNS.md), then ./go-live.sh
+
+Phase 9 — Data page: measured figures, neutral trade wording, use cases (2026-09-10)
+- [x] data.html #holdings — the 11 Atlas headline figures as figure cards (13.4bn claims, $2.21T spend, 9.49mn providers, 29,142 approvals, 21,112 patents/exclusivity, 587,105 trials, 9,714 plants, 71,319 inspections, 97,038 findings, 11,668 plans, 24.1mn coverage decisions) + measured-on footnote
+- [x] data.html #use-cases — 18 use cases, each naming the packages it reads
+- [x] RULE: trade data carries no country of origin anywhere (kept: "Mumbai, India" address, terms.html jurisdiction, Ask demo on Indian apixaban suppliers = DMF data, not trade)
+- [x] RULE: "rows" → "records" in all reader-visible copy, alt text and diagram labels
+- [x] Reconciled with the live Atlas: 1,180 → 1,160 original files, 1939 to 2026 → 1939 to 2028
+- [x] Fixed SVG label overflow in the trade and pipeline diagrams

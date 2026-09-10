@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function () {
   if (reduced || !('IntersectionObserver' in window)) return;
 
   /* ---------- scroll reveal ---------- */
-  var els = document.querySelectorAll('.card, .frame, .shot, .step, .metric, .stack-card, .panel, .adds, .lens, .svc, .split > *, .stat');
+  var els = document.querySelectorAll('.card, .frame, .shot, .step, .metric, .stack-card, .panel, .adds, .lens, .svc, .split > *, .stat, .hold, .use');
   var io = new IntersectionObserver(function (entries) {
     entries.forEach(function (en) {
       if (en.isIntersecting) { en.target.classList.add('revealed'); io.unobserve(en.target); }

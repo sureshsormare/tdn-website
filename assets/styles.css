@@ -594,3 +594,51 @@ h3 { font-size: 1.2rem; }
   .hero::after { width: 420px; height: 420px; }
 }
 @media (prefers-reduced-motion: reduce) { .hero::after { animation: none; } }
+
+/* ============================================================
+   DATA HOLDINGS — figure cards in the Data Atlas style
+   ============================================================ */
+.holds-lead { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-bottom: 16px; }
+.holds { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.hold {
+  position: relative; overflow: hidden; background: var(--paper); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 20px 22px 18px;
+  transition: border-color .18s ease, box-shadow .18s ease, transform .18s ease;
+}
+.hold::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 2px;
+  background: linear-gradient(90deg, var(--accent), rgba(20,166,184,0)); }
+.hold:hover { border-color: #B9CCD4; box-shadow: var(--shadow-md); transform: translateY(-2px); }
+.hold .lbl { font-family: var(--mono); font-size: 10.5px; font-weight: 600; letter-spacing: .14em;
+  text-transform: uppercase; color: var(--text-mute); }
+.hold .fig { display: block; margin: 10px 0 10px; font-family: var(--display); font-weight: 800;
+  font-size: clamp(1.7rem, 2.6vw, 2.05rem); letter-spacing: -.03em; color: var(--text);
+  font-variant-numeric: tabular-nums; line-height: 1; }
+.hold p { margin: 0 0 14px; font-size: 14.5px; line-height: 1.5; color: var(--text-soft); }
+.hold .vin { font-family: var(--mono); font-size: 11px; color: var(--text-mute); }
+.hold.lead { padding: 26px 28px 24px; }
+.hold.lead .fig { font-size: clamp(2.5rem, 4.6vw, 3.3rem); color: var(--accent-dk); margin: 12px 0 12px; }
+.hold.lead p { font-size: 15.5px; }
+.hold.lead .vin { display: inline-block; padding: 4px 11px; border-radius: 999px;
+  background: var(--accent-lt); color: var(--accent-dk); font-weight: 600; }
+.hold.money::after { background: linear-gradient(90deg, var(--amber), rgba(240,164,49,0)); }
+.hold.money.lead .fig { color: var(--amber-dk); }
+.hold.money.lead .vin { background: var(--amber-lt); color: var(--amber-dk); }
+
+/* ============================================================
+   USE CASES — what the packages are loaded for
+   ============================================================ */
+.uses { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.use { padding: 20px 22px; background: var(--paper); border: 1px solid var(--line); border-radius: 12px;
+  transition: border-color .18s ease, box-shadow .18s ease, transform .18s ease; }
+.use:hover { border-color: #B9CCD4; box-shadow: var(--shadow-sm); transform: translateY(-2px); }
+.use b { display: block; margin-bottom: 7px; font-family: var(--display); font-weight: 700;
+  font-size: 1rem; letter-spacing: -.015em; color: var(--text); }
+.use span { display: block; font-size: 14.5px; line-height: 1.55; color: var(--text-soft); }
+.use em { display: block; margin-top: 12px; font-style: normal; font-family: var(--mono);
+  font-size: 10.5px; letter-spacing: .09em; text-transform: uppercase; color: var(--accent-dk); }
+
+@media (max-width: 1040px) { .uses { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 940px)  { .holds { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 760px)  {
+  .holds, .holds-lead, .uses { grid-template-columns: 1fr; }
+}
