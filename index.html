@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>TransDataNexus — Pharma, healthcare and trade intelligence</title>
-<meta name="description" content="Three products on one data layer: shipment-level trade intelligence, a US healthcare and pharma platform with nine decision lenses, and a natural-language query service that answers in verified numbers.">
+<meta name="description" content="Pharma and healthcare consulting, three intelligence platforms and buyable data packages on one data layer, and intelligence-platform development for companies that want their own.">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/mark-96.png">
 <meta property="og:title" content="TransDataNexus — Pharma, healthcare and trade intelligence">
-<meta property="og:description" content="Shipment-level trade intelligence, a US healthcare platform with nine decision lenses, and a natural-language query service that answers in verified numbers.">
+<meta property="og:description" content="Consulting, intelligence platforms, data packages and platform development for pharma and healthcare, built on authorised sources.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://sureshsormare.github.io/tdn-website/">
 <meta property="og:image" content="https://sureshsormare.github.io/tdn-website/assets/og.png">
@@ -18,7 +18,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;600&display=swap">
 <link rel="stylesheet" href="assets/styles.css">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Organization","name":"TransDataNexus","url":"https://transdatanexus.com","description":"Pharma, healthcare and trade intelligence platforms built on authorised sources."}
+{"@context":"https://schema.org","@type":"Organization","name":"TransDataNexus","url":"https://transdatanexus.com","email":"suresh@transdatanexus.com","address":{"@type":"PostalAddress","addressLocality":"Mumbai","addressCountry":"IN"},"description":"Pharma and healthcare consulting, intelligence platforms, data packages and platform development, built on authorised sources."}
 </script>
 </head>
 <body>
@@ -31,10 +31,10 @@
     </a>
     <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
     <ul class="nav-links" id="nav">
-      <li><a href="trade.html">Trade Data</a></li>
-      <li><a href="healthcare.html">Healthcare &amp; Pharma</a></li>
-      <li><a href="nlq.html">NLQ</a></li>
-      <li><a href="services.html">Services</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="data.html">Data</a></li>
+      <li><a href="services.html">Consulting</a></li>
+      <li><a href="development.html">Development</a></li>
     </ul>
     <div class="nav-cta"><a class="btn btn-primary" href="contact.html">Request a demo</a></div>
   </div>
@@ -45,17 +45,17 @@
   <div class="wrap">
     <div class="hero-grid">
       <div>
-        <p class="eyebrow on-dark">Pharma · Healthcare · Trade intelligence</p>
+        <p class="eyebrow on-dark">Consulting · Products · Development</p>
         <h1>Connected intelligence for pharma and healthcare markets.</h1>
-        <p class="lede on-dark">Three products on one data layer: shipment-level trade intelligence, a US healthcare and pharma platform with nine decision lenses, and a natural-language query service that answers in verified numbers. Built from authorised sources, run as a read-only intelligence layer.</p>
+        <p class="lede on-dark">Consulting for pharma teams, three intelligence platforms and buyable data packages on one data layer, and platform development for companies that want an intelligence layer of their own. Built from authorised sources, run read-only.</p>
         <div class="btn-row">
           <a class="btn btn-primary" href="contact.html">Request a demo</a>
-          <a class="btn btn-ghost on-dark" href="healthcare.html">See the lenses</a>
+          <a class="btn btn-ghost on-dark" href="#tour">Take the tour</a>
         </div>
       </div>
 
       <div class="hero-viz">
-        <svg class="viz" viewBox="0 0 520 400" role="img" aria-label="Authorised sources flow into one molecule spine, which feeds the lenses, the Ask console, the trade explorer and the Data Atlas.">
+        <svg class="viz" viewBox="0 0 520 400" role="img" aria-label="Authorised sources flow into one molecule spine, which feeds the lenses, the Ask console, the trade explorer and data packages.">
           <defs>
             <linearGradient id="hub" x1="0" y1="0" x2="1" y2="1">
               <stop offset="0%" stop-color="#14A6B8"/><stop offset="60%" stop-color="#1E88C7"/><stop offset="100%" stop-color="#F0A431"/>
@@ -63,19 +63,14 @@
             <filter id="blur"><feGaussianBlur stdDeviation="18"/></filter>
           </defs>
           <ellipse class="viz-halo" cx="270" cy="200" rx="92" ry="80" fill="url(#hub)" filter="url(#blur)"/>
-
-          <!-- connectors in -->
           <path class="viz-link" d="M126,80 C166,80 166,200 206,200"/>
           <path class="viz-link" d="M126,160 C166,160 166,200 206,200"/>
           <path class="viz-link" d="M126,240 C166,240 166,200 206,200"/>
           <path class="viz-link" d="M126,320 C166,320 166,200 206,200"/>
-          <!-- connectors out -->
           <path class="viz-link out" d="M334,200 C364,200 364,92 394,92"/>
           <path class="viz-link out" d="M334,200 C364,200 364,164 394,164"/>
           <path class="viz-link out" d="M334,200 C364,200 364,236 394,236"/>
           <path class="viz-link out" d="M334,200 C364,200 364,308 394,308"/>
-
-          <!-- inputs -->
           <g>
             <rect class="viz-node" x="8" y="63" width="118" height="34" rx="9"/>
             <text class="viz-label" x="67" y="80" text-anchor="middle" dominant-baseline="central">Shipment records</text>
@@ -86,15 +81,11 @@
             <rect class="viz-node" x="8" y="303" width="118" height="34" rx="9"/>
             <text class="viz-label" x="67" y="320" text-anchor="middle" dominant-baseline="central">Trials &amp; plants</text>
           </g>
-
-          <!-- hub -->
           <rect x="206" y="150" width="128" height="100" rx="16" fill="url(#hub)"/>
           <rect x="206" y="150" width="128" height="100" rx="16" fill="rgba(7,26,34,.35)"/>
           <text class="viz-hub-label" x="270" y="188" text-anchor="middle">Molecule spine</text>
           <text class="viz-hub-sub" x="270" y="210" text-anchor="middle">ONE KEY · ONE TOTAL</text>
           <circle class="viz-dot" cx="270" cy="232" r="3.5" fill="#fff"/>
-
-          <!-- outputs -->
           <g>
             <rect class="viz-node" x="394" y="75" width="118" height="34" rx="9"/>
             <text class="viz-label out" x="453" y="92" text-anchor="middle" dominant-baseline="central">Nine lenses</text>
@@ -103,7 +94,7 @@
             <rect class="viz-node" x="394" y="219" width="118" height="34" rx="9"/>
             <text class="viz-label out" x="453" y="236" text-anchor="middle" dominant-baseline="central">Trade explorer</text>
             <rect class="viz-node" x="394" y="291" width="118" height="34" rx="9"/>
-            <text class="viz-label out" x="453" y="308" text-anchor="middle" dominant-baseline="central">Data Atlas</text>
+            <text class="viz-label out" x="453" y="308" text-anchor="middle" dominant-baseline="central">Data packages</text>
           </g>
         </svg>
       </div>
@@ -113,23 +104,55 @@
       <div class="stat"><strong data-count="323.9" data-suffix="mn">323.9mn</strong><span>curated rows, counted from the data itself</span></div>
       <div class="stat"><strong data-count="177">177</strong><span>datasets on the Data Atlas, 1939 to 2026</span></div>
       <div class="stat"><strong data-count="1.6" data-suffix="mn+">1.6mn+</strong><span>verified shipment records, export and import</span></div>
-      <div class="stat"><strong data-count="9">9</strong><span>decision lenses over one molecule spine</span></div>
+      <div class="stat"><strong data-count="657">657</strong><span>verified questions in the Ask library</span></div>
+    </div>
+    <div class="trust">
+      <span>Read-only by construction</span><span>Authorised sources only</span><span>Source and vintage on every figure</span><span>Single-tenant deployment</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ THREE PILLARS ============ -->
+<section class="band-wash">
+  <div class="wrap">
+    <p class="eyebrow">What we offer</p>
+    <h2 class="narrow">Three ways to work with the same data layer.</h2>
+    <p class="lede narrow">Ask us to answer a question, use the platforms and data yourself, or have us build the intelligence layer your company will own.</p>
+    <div class="grid grid-3 mt-lg">
+      <article class="card">
+        <span class="card-tag">01 · Consulting</span>
+        <h3>Pharma &amp; healthcare consulting</h3>
+        <p>Market access, regulatory, patent and exclusivity, commercial, portfolio, supply, trade and disease questions, answered as evidence with source and vintage on every figure.</p>
+        <a class="more" href="services.html">Consulting services →</a>
+      </article>
+      <article class="card">
+        <span class="card-tag">02 · Products</span>
+        <h3>Platforms and data packages</h3>
+        <p>Three intelligence platforms: Trade Data, Healthcare &amp; Pharma with nine lenses, and NLQ. The harmonised datasets behind them, available as packages on their own or together with the platform.</p>
+        <a class="more" href="products.html">All products →</a>
+      </article>
+      <article class="card">
+        <span class="card-tag">03 · Development</span>
+        <h3>Intelligence platform development</h3>
+        <p>We build intelligence platforms for healthcare and pharma companies: the data layer, the lenses, the natural-language query service, deployed under your brand and owned by you.</p>
+        <a class="more" href="development.html">Platform development →</a>
+      </article>
     </div>
   </div>
 </section>
 
 <!-- ============ PRODUCTS ============ -->
-<section class="band-wash">
+<section>
   <div class="wrap">
-    <p class="eyebrow">Three products · one data layer</p>
+    <p class="eyebrow">Products · three platforms, one data layer</p>
     <h2 class="narrow">Everything sits on the same spine, so nothing disagrees.</h2>
-    <p class="lede narrow">Each product answers a different question. All three read the same resolved data, which is why a number in a lens, a number in the trade explorer and a number in an Ask answer are the same number.</p>
+    <p class="lede narrow">Each platform answers a different question. All three read the same resolved data, which is why a number in a lens, a number in the trade explorer and a number in an Ask answer are the same number.</p>
 
     <div class="grid grid-3 mt-lg">
       <article class="card card-shot">
         <div class="shot-strip"><img src="assets/shots/trade/dashboard-trade-flow.png" alt="Trade flow analyser: paracetamol exports from India by destination and importer" loading="lazy"></div>
         <div class="card-body">
-          <span class="card-tag">Product 01</span>
+          <span class="card-tag">Platform 01</span>
           <h3>Trade Data</h3>
           <p>Shipment-level pharmaceutical trade intelligence: who ships what, where, at what price, from India to the world, plus global bilateral flows by product and period.</p>
           <a class="more" href="trade.html">Explore Trade Data →</a>
@@ -138,22 +161,129 @@
       <article class="card card-shot">
         <div class="shot-strip"><img src="assets/shots/health/journey-metformin.png" alt="Molecule journey lens for metformin across twelve data stages" loading="lazy"></div>
         <div class="card-body">
-          <span class="card-tag">Product 02</span>
+          <span class="card-tag">Platform 02</span>
           <h3>Healthcare &amp; Pharma</h3>
           <p>US healthcare and pharma intelligence on a molecule spine: entry, supply, market access, competition, disease, facilities, regulatory and the full molecule journey, each as its own lens.</p>
           <a class="more" href="healthcare.html">See the nine lenses →</a>
         </div>
       </article>
       <article class="card card-shot">
-        <div class="shot-strip"><img src="assets/shots/nlq/ask.png" alt="Ask console answering a plain-English question with verified SQL and sources" loading="lazy"></div>
+        <div class="shot-strip"><img src="assets/shots/nlq/ask.png" alt="Ask console answering a plain-English question with verified figures, charts and sources" loading="lazy"></div>
         <div class="card-body">
-          <span class="card-tag">Product 03</span>
+          <span class="card-tag">Platform 03</span>
           <h3>NLQ · Ask</h3>
           <p>Ask in plain English. The service finds the right tables, writes and checks the SQL, runs it read-only, and verifies every number against the rows before it answers.</p>
           <a class="more" href="nlq.html">How Ask verifies itself →</a>
         </div>
       </article>
     </div>
+
+    <div class="grid grid-2 mt-md">
+      <article class="card">
+        <span class="ico amber"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6"/><path d="M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg></span>
+        <h3>Data packages</h3>
+        <p>The harmonised datasets behind the platforms, delivered as files with a molecule crosswalk, a vintage manifest and an integrity report. Buy a package without the intelligence layer and use it in your own tools.</p>
+        <a class="more" href="data.html">See the packages →</a>
+      </article>
+      <article class="card">
+        <span class="ico amber"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 18v3"/><path d="M7 12l3-3 3 3 4-4"/></svg></span>
+        <h3>Data + intelligence platform</h3>
+        <p>The packages and the platform together: lenses, the Data Atlas and Ask deployed privately for your team, refreshed as registers are released. Or the same stack built under your brand.</p>
+        <a class="more" href="development.html">Data + platform →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PLATFORM TOUR ============ -->
+<section class="band-dark gridbg" id="tour">
+  <div class="wrap">
+    <p class="eyebrow on-dark">Platform tour</p>
+    <h2 class="narrow">Three screens, real data.</h2>
+    <p class="lede on-dark narrow">Every screen below is the live system on real records, not a mock-up. Switch between the platforms.</p>
+
+    <div class="mt-lg" data-tabs>
+      <div class="tabs" role="tablist" aria-label="Platform tour">
+        <button role="tab" id="tour-t1" aria-controls="tour-p1" aria-selected="true">Trade Data</button>
+        <button role="tab" id="tour-t2" aria-controls="tour-p2" aria-selected="false">Healthcare &amp; Pharma</button>
+        <button role="tab" id="tour-t3" aria-controls="tour-p3" aria-selected="false">NLQ · Ask</button>
+      </div>
+
+      <div role="tabpanel" id="tour-p1" aria-labelledby="tour-t1">
+        <div class="tour">
+          <div class="shot"><div class="frame-bar"><i></i><i></i><i></i><em>trade · flow analyser</em><span class="live">live</span></div><img src="assets/shots/trade/dashboard-trade-flow.png" alt="Trade flow analyser for paracetamol: market value, shipments, top importing countries and a flow diagram from India to importers" loading="lazy"></div>
+          <div class="tour-side">
+            <h3>Follow one product from India to every buyer.</h3>
+            <p>Pick a drug or a supplier. The analyser totals the shipments, ranks the importing countries, lists the importers behind each one and draws the corridor.</p>
+            <ul class="ticks on-dark">
+              <li><b>Shipment grain kept.</b> Every total can be opened back to the shipments behind it.</li>
+              <li><b>Company and country profiles</b> built from the same records.</li>
+              <li><b>Global module</b> for bilateral flows across 105 reporter countries.</li>
+            </ul>
+            <a class="btn btn-ghost on-dark" href="trade.html" style="margin-top:22px">Trade Data →</a>
+          </div>
+        </div>
+      </div>
+
+      <div role="tabpanel" id="tour-p2" aria-labelledby="tour-t2" hidden>
+        <div class="tour">
+          <div class="shot"><div class="frame-bar"><i></i><i></i><i></i><em>healthcare · molecule journey</em><span class="live">live</span></div><img src="assets/shots/health/journey-metformin.png" alt="Molecule journey for metformin: trials, approvals, generics, spending and supply across twelve stages" loading="lazy"></div>
+          <div class="tour-side">
+            <h3>One molecule through all twelve stages.</h3>
+            <p>Trials, approval, patents, generic entry, spending, prescribers, plants, inspections, shortages, coverage, trade: each stage a panel, all on the same key.</p>
+            <ul class="ticks on-dark">
+              <li><b>Nine lenses</b> for nine kinds of decision, over the same resolved data.</li>
+              <li><b>Data Atlas</b> catalogues every dataset with lineage and integrity checks.</li>
+              <li><b>Source and vintage</b> printed under every figure.</li>
+            </ul>
+            <a class="btn btn-ghost on-dark" href="healthcare.html" style="margin-top:22px">Healthcare &amp; Pharma →</a>
+          </div>
+        </div>
+      </div>
+
+      <div role="tabpanel" id="tour-p3" aria-labelledby="tour-t3" hidden>
+        <div class="tour">
+          <div class="shot"><div class="frame-bar"><i></i><i></i><i></i><em>ask · answered in 0.39 s</em><span class="live">live</span></div><img src="assets/shots/nlq/ask.png" alt="Ask console answer: 51 alert-free Indian suppliers for apixaban, with summary, entities named and charts" loading="lazy"></div>
+          <div class="tour-side">
+            <h3>Ask in English. Get a number you can check.</h3>
+            <p>“Who are the reliable Indian suppliers for apixaban that don't have any import alerts?” returned 51 supplier records, the entities behind them, and the query and rows to prove it.</p>
+            <ul class="ticks on-dark">
+              <li><b>Grounded first:</b> entities and schema retrieved before any SQL is written.</li>
+              <li><b>Checked after:</b> every figure must trace to a returned row.</li>
+              <li><b>Clarifies</b> instead of guessing when the question cannot be answered as asked.</li>
+            </ul>
+            <a class="btn btn-ghost on-dark" href="nlq.html" style="margin-top:22px">NLQ · Ask →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHO IT IS FOR ============ -->
+<section class="band-wash">
+  <div class="wrap">
+    <p class="eyebrow">Who it is for</p>
+    <h2 class="narrow">Fifteen roles. Six hundred and fifty-seven verified questions.</h2>
+    <p class="lede narrow">The Ask library is organised by the people who use it. Each role has a set of questions that have been run, checked and kept, so a new user starts from what their peers already asked.</p>
+    <div class="personas mt-lg">
+      <div class="persona"><span>Market research &amp; competitive intelligence</span><b>58</b></div>
+      <div class="persona"><span>Biosimilar &amp; new-entry strategy</span><b>54</b></div>
+      <div class="persona"><span>Sales &amp; field-force targeting</span><b>52</b></div>
+      <div class="persona"><span>Pharma product management</span><b>51</b></div>
+      <div class="persona"><span>Health-system &amp; hospital strategy</span><b>50</b></div>
+      <div class="persona"><span>Medical device commercial</span><b>46</b></div>
+      <div class="persona"><span>R&amp;D &amp; pipeline strategy</span><b>45</b></div>
+      <div class="persona"><span>Payer &amp; formulary</span><b>42</b></div>
+      <div class="persona"><span>Manufacturing &amp; procurement</span><b>42</b></div>
+      <div class="persona"><span>Power analyst</span><b>41</b></div>
+      <div class="persona"><span>Regulatory affairs</span><b>40</b></div>
+      <div class="persona"><span>Supply chain &amp; sourcing risk</span><b>40</b></div>
+      <div class="persona"><span>Pharmacy operations</span><b>39</b></div>
+      <div class="persona"><span>Workforce &amp; staffing planning</span><b>33</b></div>
+      <div class="persona"><span>Medical coding &amp; billing</span><b>24</b></div>
+    </div>
+    <p class="form-note" style="margin-top:14px">Counts are verified questions in the library per role, as of September 2026.</p>
   </div>
 </section>
 
@@ -165,9 +295,7 @@
         <p class="eyebrow on-dark">Walkthrough</p>
         <h2>Watch the platform, not a slide about it.</h2>
         <p class="lede on-dark">A recorded walkthrough of the US pharma and healthcare platform: the Data Atlas, the lenses, the molecule journey and the Ask console, on real data.</p>
-        <div class="btn-row">
-          <a class="btn btn-primary" href="contact.html">Request a live demo</a>
-        </div>
+        <div class="btn-row"><a class="btn btn-primary" href="contact.html">Request a live demo</a></div>
       </div>
       <div class="video">
         <iframe src="https://www.youtube-nocookie.com/embed/xWdXi1I3tyM?rel=0&modestbranding=1" title="TransDataNexus teaser — AI-native US pharma and healthcare intelligence platform, full walkthrough" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
@@ -185,10 +313,8 @@
 
     <div class="frame mt-lg">
       <div class="frame-bar"><i></i><i></i><i></i><em>system · one spine, three products</em><span class="live">live</span></div>
-      <svg viewBox="0 0 960 300" role="img" aria-label="Authorised sources are resolved to one molecule key, then served to lenses, Ask and the trade explorer.">
+      <svg viewBox="0 0 960 300" role="img" aria-label="Authorised sources are resolved to one molecule key, then served to lenses, Ask, the trade explorer and data packages.">
         <rect class="fx-bg" width="960" height="300"/>
-
-        <!-- LAYER 01 · SOURCES -->
         <text class="fx-txt-a" x="40" y="52">LAYER 01 · AUTHORISED SOURCES</text>
         <rect class="fx-panel" x="40" y="66" width="230" height="168" rx="10"/>
         <text class="fx-txt-b" x="60" y="96" style="font-size:12px">REGISTERS · RECORDS</text>
@@ -199,12 +325,8 @@
         <text class="fx-txt" x="60" y="198">shipments · export and import</text>
         <text class="fx-txt-g" x="60" y="222">✓ vintage stamped on every row</text>
         <circle class="viz-dot" cx="246" cy="90" r="3" fill="#2ECC8A"/>
-
-        <!-- flows sources -> spine -->
         <path class="fx-flow" d="M270,120 C310,120 310,150 350,150"/>
         <path class="fx-flow" d="M270,180 C310,180 310,150 350,150"/>
-
-        <!-- LAYER 02 · SPINE -->
         <text class="fx-txt-a" x="350" y="52">LAYER 02 · MOLECULE SPINE</text>
         <rect class="fx-hl" x="350" y="66" width="240" height="168" rx="10"/>
         <text class="fx-txt-b" x="370" y="96" style="font-size:12px">ONE KEY PER MOLECULE</text>
@@ -215,21 +337,16 @@
         <text class="fx-txt" x="370" y="198">marts prebuilt · read-only · capped</text>
         <text class="fx-txt-m" x="370" y="222">no phantom prescriptions</text>
         <circle class="viz-dot" cx="566" cy="90" r="3" fill="#6FD3E2"/>
-
-        <!-- flows spine -> products -->
         <path class="fx-flow amber" d="M590,150 C640,150 640,86 690,86"/>
         <path class="fx-flow amber" d="M590,150 L690,150"/>
         <path class="fx-flow amber" d="M590,150 C640,150 640,214 690,214"/>
-
-        <!-- LAYER 03 · PRODUCTS -->
         <text class="fx-txt-a" x="690" y="52">LAYER 03 · WHAT YOU USE</text>
         <rect class="fx-panel" x="690" y="66" width="230" height="40" rx="8"/>
-        <text class="fx-txt-b" x="706" y="91">Nine lenses · Data Atlas</text>
+        <text class="fx-txt-b" x="706" y="91">Nine lenses · Data Atlas · Ask</text>
         <rect class="fx-hl-m" x="690" y="130" width="230" height="40" rx="8"/>
-        <text class="fx-txt-b" x="706" y="155">Ask · verified answers</text>
+        <text class="fx-txt-b" x="706" y="155">Data packages · files + crosswalk</text>
         <rect class="fx-panel" x="690" y="194" width="230" height="40" rx="8"/>
         <text class="fx-txt-b" x="706" y="219">Trade explorer · profiles</text>
-
         <line class="fx-rule" x1="40" y1="262" x2="920" y2="262"/>
         <text class="fx-txt" x="40" y="284">one spine · one total per molecule</text>
         <text class="fx-txt-g" x="920" y="284" text-anchor="end">same number everywhere · source and vintage shown</text>
@@ -238,38 +355,134 @@
   </div>
 </section>
 
-<!-- ============ SERVICES ============ -->
+<!-- ============ BEFORE / AFTER ============ -->
 <section>
   <div class="wrap">
-    <p class="eyebrow">Services</p>
-    <h2 class="narrow">The questions pharma teams bring us.</h2>
-    <p class="lede narrow">Each service is a lens plus a person who knows the data. The output is evidence with its source and vintage, never a recommendation dressed as a number.</p>
-
-    <div class="grid grid-4 mt-lg">
-      <div class="card"><span class="card-num">01</span><h3>Market access</h3><p>Coverage, restrictions and the payer path for a molecule, by book and by plan.</p></div>
-      <div class="card"><span class="card-num">02</span><h3>Regulatory</h3><p>Approvals, shortages, recalls, inspections and citations, on the molecule and on the plant.</p></div>
-      <div class="card"><span class="card-num">03</span><h3>Patent &amp; exclusivity</h3><p>The cliff timeline, the challengers queued and when the door actually opens.</p></div>
-      <div class="card"><span class="card-num">04</span><h3>Commercial &amp; competitive</h3><p>Market share, the moat, rival supply and who is gaining paid volume.</p></div>
-      <div class="card"><span class="card-num">05</span><h3>Portfolio &amp; pipeline</h3><p>Entry opportunities ranked by prize, opening date and sourcing risk.</p></div>
-      <div class="card"><span class="card-num">06</span><h3>Supply &amp; sourcing</h3><p>Who makes it, where, with what inspection record, and how exposed the supply is.</p></div>
-      <div class="card"><span class="card-num">07</span><h3>Trade &amp; BD</h3><p>Shipment-level buyers, suppliers and corridors for a product or a company.</p></div>
-      <div class="card"><span class="card-num">08</span><h3>Disease &amp; demand</h3><p>Prevalence, patients, paid spend and the drugs that treat it, by state.</p></div>
-    </div>
-    <div class="btn-row">
-      <a class="btn btn-ghost" href="services.html">Full detail on each service →</a>
+    <p class="eyebrow">What changes</p>
+    <h2 class="narrow">The same questions, answered differently.</h2>
+    <p class="lede narrow">Nothing here replaces judgment. It replaces the week spent assembling the numbers judgment is applied to.</p>
+    <div class="flow mt-lg">
+      <div class="flow-row"><div class="flow-head">Question</div><div class="flow-head">Traditional research</div><div class="flow-head">With TransDataNexus</div></div>
+      <div class="flow-row"><div class="flow-stage">Time to a defensible number</div><div class="flow-was">Days to weeks of analyst work</div><div class="flow-now"><strong>Seconds</strong>, with the query and the rows attached</div></div>
+      <div class="flow-row"><div class="flow-stage">Where the figure came from</div><div class="flow-was">An analyst's memory, last year's deck</div><div class="flow-now"><strong>A named register and its vintage</strong> under every figure</div></div>
+      <div class="flow-row"><div class="flow-stage">Consistency across teams</div><div class="flow-was">Three decks, three totals</div><div class="flow-now"><strong>One molecule spine</strong>, one total, everywhere</div></div>
+      <div class="flow-row"><div class="flow-stage">Checking the answer</div><div class="flow-was">Trust the person who built it</div><div class="flow-now"><strong>Provenance guard:</strong> no figure without a row behind it</div></div>
+      <div class="flow-row"><div class="flow-stage">Scope of one look</div><div class="flow-was">One market, one source at a time</div><div class="flow-now"><strong>177 datasets, nine lenses</strong>, trade and US on the same key</div></div>
     </div>
   </div>
 </section>
 
-<!-- ============ PRINCIPLES ============ -->
+<!-- ============ DATA COVERAGE ============ -->
 <section class="band-dark gridbg">
   <div class="wrap">
-    <p class="eyebrow on-dark">How it holds up</p>
-    <h2 class="narrow">Numbers you can put in front of a board.</h2>
-    <div class="grid grid-3 mt-lg">
-      <div class="card on-dark"><h3>Evidence, not advice</h3><p>Every figure carries its source and its vintage. The platform shows signals; the decision stays with you.</p></div>
-      <div class="card on-dark"><h3>Authorised sources only</h3><p>Registers, records and shipment data from authorised sources, counted from the data itself, never estimated.</p></div>
-      <div class="card on-dark"><h3>Read-only, verifiable</h3><p>Nothing writes back. Every Ask answer is checked against the rows it came from before you see it.</p></div>
+    <p class="eyebrow on-dark">Data coverage</p>
+    <h2 class="narrow">Counted from the data itself, never estimated.</h2>
+    <p class="lede on-dark narrow">The Data Atlas catalogues every dataset behind the platform with its lineage, vintage and integrity checks. These are the counts it reports. Every family below is also available as a data package.</p>
+    <div class="metrics mt-lg">
+      <div class="metric hl"><strong data-count="13.4" data-suffix="bn">13.4bn</strong><span>prescriptions and claims, 2019 to 2025</span></div>
+      <div class="metric hl"><strong data-count="2.21" data-prefix="$" data-suffix="T">$2.21T</strong><span>drug spending tracked across paid registers</span></div>
+      <div class="metric"><strong data-count="9.49" data-suffix="mn">9.49mn</strong><span>healthcare providers and organisations</span></div>
+      <div class="metric"><strong data-count="29142">29,142</strong><span>drug approvals, 1939 to today</span></div>
+      <div class="metric"><strong data-count="587105">587,105</strong><span>clinical trials with sponsor and phase</span></div>
+      <div class="metric"><strong data-count="9714">9,714</strong><span>manufacturing plants, mapped</span></div>
+      <div class="metric"><strong data-count="71319">71,319</strong><span>plant inspections with outcome</span></div>
+      <div class="metric"><strong data-count="24.1" data-suffix="mn">24.1mn</strong><span>coverage decisions across 11,668 plans</span></div>
+    </div>
+    <div class="families mt-lg">
+      <div class="family"><b>Spending &amp; claims</b><span>Prescription drug plans, physician-administered drugs, state utilisation, industry payments to clinicians.</span></div>
+      <div class="family"><b>Regulatory registers</b><span>Approvals, patents and exclusivity, product listings, shortages, recalls, inspections, warning letters, import alerts, drug master files.</span></div>
+      <div class="family"><b>Trials, plants &amp; people</b><span>Clinical trials, manufacturing sites, providers, hospitals, pharmacies, health systems.</span></div>
+      <div class="family"><b>Trade</b><span>India export and import shipment records; bilateral flows for 105 reporter countries, by product and month.</span></div>
+    </div>
+    <div class="btn-row"><a class="btn btn-ghost on-dark" href="data.html">Buy the data on its own →</a></div>
+  </div>
+</section>
+
+<!-- ============ CONSULTING ============ -->
+<section>
+  <div class="wrap">
+    <p class="eyebrow">Consulting</p>
+    <h2 class="narrow">The questions pharma teams bring us.</h2>
+    <p class="lede narrow">Each service is a lens plus a person who knows the data. The output is evidence with its source and vintage, never a recommendation dressed as a number.</p>
+
+    <div class="grid grid-4 mt-lg">
+      <div class="card"><span class="ico"><svg viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/><path d="M3 17l9 5 9-5"/></svg></span><h3>Market access</h3><p>Coverage, restrictions and the payer path for a molecule, by book and by plan.</p></div>
+      <div class="card"><span class="ico"><svg viewBox="0 0 24 24"><rect x="6" y="4" width="12" height="17" rx="2"/><path d="M9 4V2h6v2"/><path d="M9 13l2 2 4-4"/></svg></span><h3>Regulatory</h3><p>Approvals, shortages, recalls, inspections and citations, on the molecule and on the plant.</p></div>
+      <div class="card"><span class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><h3>Patent &amp; exclusivity</h3><p>The cliff timeline, the challengers queued and when the door actually opens.</p></div>
+      <div class="card"><span class="ico"><svg viewBox="0 0 24 24"><path d="M4 20V10"/><path d="M10 20V4"/><path d="M16 20v-7"/><path d="M22 20H2"/></svg></span><h3>Commercial &amp; competitive</h3><p>Market share, the moat, rival supply and who is gaining paid volume.</p></div>
+      <div class="card"><span class="ico amber"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></span><h3>Portfolio &amp; pipeline</h3><p>Entry opportunities ranked by prize, opening date and sourcing risk.</p></div>
+      <div class="card"><span class="ico amber"><svg viewBox="0 0 24 24"><path d="M3 21V9l6 4V9l6 4V4h6v17H3z"/></svg></span><h3>Supply &amp; sourcing</h3><p>Who makes it, where, with what inspection record, and how exposed the supply is.</p></div>
+      <div class="card"><span class="ico amber"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 010 18"/><path d="M12 3a14 14 0 000 18"/></svg></span><h3>Trade &amp; BD</h3><p>Shipment-level buyers, suppliers and corridors for a product or a company.</p></div>
+      <div class="card"><span class="ico amber"><svg viewBox="0 0 24 24"><path d="M3 12h4l2-5 4 10 2-5h6"/></svg></span><h3>Disease &amp; demand</h3><p>Prevalence, patients, paid spend and the drugs that treat it, by state.</p></div>
+    </div>
+    <div class="btn-row"><a class="btn btn-ghost" href="services.html">Full detail on each service →</a></div>
+  </div>
+</section>
+
+<!-- ============ DEVELOPMENT ============ -->
+<section class="band-dark gridbg">
+  <div class="wrap">
+    <div class="split split-narrow">
+      <div>
+        <p class="eyebrow on-dark">Development</p>
+        <h2>An intelligence platform of your own.</h2>
+        <p class="lede on-dark">We build what we run: the data layer that harmonises registers onto one spine, the lens interface, the natural-language query service with its verification gates, and the trade explorer. Deployed under your brand, on your data or ours, owned by you.</p>
+        <ul class="ticks on-dark">
+          <li><b>Healthcare and pharma first.</b> The spine, the lenses and the question library already exist; your platform starts from them.</li>
+          <li><b>Run it or own it.</b> Managed by us, or handed over with the code and the pipelines.</li>
+          <li><b>Proof on this page.</b> Every screen above is a platform we built and operate.</li>
+        </ul>
+        <div class="btn-row"><a class="btn btn-primary" href="development.html">Platform development →</a></div>
+      </div>
+      <div class="shot">
+        <div class="frame-bar"><i></i><i></i><i></i><em>healthcare · data atlas</em><span class="live">live</span></div>
+        <img src="assets/shots/health/atlas.png" alt="Data Atlas: headline counts for prescriptions, spending, providers, approvals, patents, trials, plants, inspections and coverage" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ENTERPRISE ============ -->
+<section class="band-wash">
+  <div class="wrap">
+    <p class="eyebrow">Enterprise &amp; deployment</p>
+    <h2 class="narrow">Built to sit inside a regulated company.</h2>
+    <p class="lede narrow">The platform is an intelligence layer, not a system of record. It reads, it never writes, and everything it shows can be traced.</p>
+    <div class="grid grid-4 mt-lg">
+      <div class="card"><span class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="6" rx="1.5"/><rect x="3" y="14" width="18" height="6" rx="1.5"/><path d="M7 7h.01M7 17h.01"/></svg></span><h3>Single-tenant</h3><p>Deployed privately for each client, on your infrastructure or ours. Nothing is shared between clients.</p></div>
+      <div class="card"><span class="ico"><svg viewBox="0 0 24 24"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg></span><h3>Read-only</h3><p>The warehouse is opened read-only. Every query carries a time and memory cap. Nothing writes back.</p></div>
+      <div class="card"><span class="ico"><svg viewBox="0 0 24 24"><path d="M14 3H6a2 2 0 00-2 2v14a2 2 0 002 2h12a2 2 0 002-2V9z"/><path d="M14 3v6h6"/><path d="M9 15l2 2 4-4"/></svg></span><h3>Auditable</h3><p>Every Ask answer ships with its SQL and rows. Every lens figure shows its source and vintage.</p></div>
+      <div class="card"><span class="ico"><svg viewBox="0 0 24 24"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M4 21h16"/></svg></span><h3>Yours to take out</h3><p>Spreadsheet export from every view. Question text goes to the model provider to draft SQL; your data does not.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ENGAGEMENT ============ -->
+<section>
+  <div class="wrap">
+    <p class="eyebrow">How we work</p>
+    <h2 class="narrow">Start on your molecule. Stop whenever the question is answered.</h2>
+    <div class="grid grid-4 mt-lg engage">
+      <div class="card"><span class="card-num">01</span><h3>Demo <span class="tag">no cost</span></h3><p>One molecule or product, on the live system, in thirty minutes. You see what the platform already knows about it.</p></div>
+      <div class="card"><span class="card-num">02</span><h3>Pilot <span class="tag">fixed scope</span></h3><p>One question set, run on the platform for your team. Fixed scope, fixed period, typically two to four weeks.</p></div>
+      <div class="card"><span class="card-num">03</span><h3>Access <span class="tag">annual</span></h3><p>All lenses, the Data Atlas and Ask for your team, deployed privately, refreshed as registers are released.</p></div>
+      <div class="card"><span class="card-num">04</span><h3>Build <span class="tag">your platform</span></h3><p>A data package, a dossier, or a full intelligence platform built for your company and owned by you.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="band-wash">
+  <div class="wrap">
+    <p class="eyebrow">Questions we are asked</p>
+    <h2 class="narrow">Before you request a demo.</h2>
+    <div class="grid grid-2 mt-lg faq">
+      <div class="card"><h3>Does this replace analysts?</h3><p>No. It replaces the assembly work around them. Analysts still decide what the numbers mean; they stop spending the week finding and reconciling them.</p></div>
+      <div class="card"><h3>Where does the data come from?</h3><p>Authorised sources only: registers, records and shipment data. Every figure names its source and vintage. Nothing is modelled or estimated.</p></div>
+      <div class="card"><h3>Can we buy the data without the platform?</h3><p>Yes. Each family on the Data Atlas is available as a package: harmonised files, a molecule crosswalk, a vintage manifest and an integrity report, for use in your own tools.</p></div>
+      <div class="card"><h3>Is anything sent outside?</h3><p>The text of a question goes to the model provider so it can draft SQL. Your data, the rows and the answers stay in the deployment.</p></div>
+      <div class="card"><h3>Can you build this for us?</h3><p>Yes. The data layer, the lenses and the query service are built and operated by us today. We build the same stack for healthcare and pharma companies, under their brand, and hand it over.</p></div>
+      <div class="card"><h3>What does a demo look like?</h3><p>You name a molecule. We open the platform on it, lens by lens, then ask one question of yours in the console. No slides.</p></div>
     </div>
   </div>
 </section>
@@ -281,7 +494,7 @@
     <p class="lede on-dark">Send one molecule or one product. We will walk you through what the platform already knows about it, on the live system.</p>
     <div class="btn-row">
       <a class="btn btn-primary" href="contact.html">Request a demo</a>
-      <a class="btn btn-ghost on-dark" href="healthcare.html">See the lenses</a>
+      <a class="btn btn-ghost on-dark" href="products.html">All products</a>
     </div>
   </div>
 </section>
@@ -291,7 +504,7 @@
     <div class="footer-grid">
       <div>
         <div class="footer-brand"><img src="assets/mark-96.png" alt="" width="28" height="28"><span>TransData<b>Nexus</b></span></div>
-        <p>Pharma, healthcare and trade intelligence platforms, built on authorised sources and served as a read-only intelligence layer.</p>
+        <p>Pharma and healthcare consulting, intelligence platforms, data packages and platform development, built on authorised sources and run read-only.</p>
       </div>
       <div>
         <h3>Products</h3>
@@ -299,10 +512,12 @@
           <li><a href="trade.html">Trade Data</a></li>
           <li><a href="healthcare.html">Healthcare &amp; Pharma</a></li>
           <li><a href="nlq.html">NLQ · Ask</a></li>
+          <li><a href="data.html">Data packages</a></li>
+          <li><a href="products.html">All products</a></li>
         </ul>
       </div>
       <div>
-        <h3>Services</h3>
+        <h3>Consulting</h3>
         <ul>
           <li><a href="services.html#market-access">Market access</a></li>
           <li><a href="services.html#regulatory">Regulatory</a></li>
@@ -314,14 +529,17 @@
       <div>
         <h3>Company</h3>
         <ul>
+          <li><a href="development.html">Platform development</a></li>
           <li><a href="contact.html">Request a demo</a></li>
-          <li><a href="mailto:info@transdatanexus.com">info@transdatanexus.com</a></li>
+          <li><a href="mailto:suresh@transdatanexus.com">suresh@transdatanexus.com</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="terms.html">Terms of use</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bot">
       <span>© 2026 TransDataNexus. All rights reserved.</span>
-      <span>Nagpur, India</span>
+      <span>Mumbai, India</span>
     </div>
   </div>
 </footer>

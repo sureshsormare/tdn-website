@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Platform development — TransDataNexus</title>
+<meta name="description" content="We build intelligence platforms for healthcare and pharma companies: the data layer, the lenses, the natural-language query service and the trade explorer, under your brand, on your data or ours, owned by you.">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/mark-96.png">
+<meta property="og:title" content="Platform development — TransDataNexus">
+<meta property="og:description" content="Intelligence platform development for healthcare and pharma: data layer, lenses, natural-language query service and trade explorer, built under your brand and owned by you.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sureshsormare.github.io/tdn-website/development.html">
+<meta property="og:image" content="https://sureshsormare.github.io/tdn-website/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="assets/styles.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"TransDataNexus","url":"https://transdatanexus.com","email":"suresh@transdatanexus.com","address":{"@type":"PostalAddress","addressLocality":"Mumbai","addressCountry":"IN"},"description":"Pharma and healthcare consulting, intelligence platforms, data packages and platform development, built on authorised sources."}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html" aria-label="TransDataNexus home">
+      <img src="assets/mark-96.png" alt="" width="30" height="30">
+      <span>TransData<b>Nexus</b></span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+    <ul class="nav-links" id="nav">
+      <li><a href="products.html">Products</a></li>
+      <li><a href="data.html">Data</a></li>
+      <li><a href="services.html">Consulting</a></li>
+      <li><a href="development.html" aria-current="page">Development</a></li>
+    </ul>
+    <div class="nav-cta"><a class="btn btn-primary" href="contact.html">Request a demo</a></div>
+  </div>
+</header>
+
+<!-- ============ PAGE HEAD ============ -->
+<section class="page-head gridbg">
+  <div class="wrap">
+    <p class="eyebrow on-dark">Development · software services</p>
+    <h1>We build intelligence platforms for healthcare and pharma companies.</h1>
+    <p class="lede on-dark">The data layer, the lenses, the natural-language query service and the trade explorer. Built under your brand, on your data or ours, owned by you. It is the same stack we run ourselves, so nothing on this page is a proposal; it is a description of working software.</p>
+    <div class="btn-row">
+      <a class="btn btn-primary" href="contact.html">Talk about a build</a>
+      <a class="btn btn-ghost on-dark" href="#proof">See what we run</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><strong data-count="3">3</strong><span>platforms we build and operate today</span></div>
+      <div class="stat"><strong data-count="9">9</strong><span>lenses built over one molecule spine</span></div>
+      <div class="stat"><strong data-count="177">177</strong><span>datasets harmonised, each with its vintage</span></div>
+      <div class="stat"><strong data-count="657">657</strong><span>verified questions in the Ask library</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHAT WE BUILD ============ -->
+<section>
+  <div class="wrap">
+    <p class="eyebrow">What we build</p>
+    <h2 class="narrow">Four parts. Use one, or all four.</h2>
+    <p class="lede narrow">Each part exists as running software on our own platforms. A build for you starts from that code, not from a blank page.</p>
+    <div class="grid grid-4 mt-lg">
+      <article class="card">
+        <span class="ico"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6"/><path d="M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg></span>
+        <h3>Data layer</h3>
+        <p>Ingestion from authorised sources. Harmonisation onto one molecule spine, so every register lands on the same key. Prebuilt marts for the questions you ask most. Vintage stamping on every row. Integrity checks that run on each refresh.</p>
+      </article>
+      <article class="card">
+        <span class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 18v3"/><path d="M7 12l3-3 3 3 4-4"/></svg></span>
+        <h3>Lens interface</h3>
+        <p>Decision views over the resolved data. Each lens arranges the same numbers around one question. Source and vintage sit under every figure. Every view exports to a spreadsheet.</p>
+      </article>
+      <article class="card">
+        <span class="ico amber"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4V5z"/><path d="M8 9h8"/><path d="M8 12h5"/></svg></span>
+        <h3>Natural-language query service</h3>
+        <p>Retrieval over entity and schema indexes before anything is written. SQL written, then validated. Read-only execution with a cap on every query. Scope and provenance guards on the answer. When the question is unclear, it asks first.</p>
+      </article>
+      <article class="card">
+        <span class="ico amber"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 010 18"/><path d="M12 3a14 14 0 000 18"/></svg></span>
+        <h3>Trade explorer</h3>
+        <p>Shipment-level search over export and import records. Company and country profiles built from the same rows. A flow analyser that follows one product to every buyer. A global module for bilateral flows by product and period.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROOF ============ -->
+<section class="band-dark gridbg" id="proof">
+  <div class="wrap">
+    <p class="eyebrow on-dark">Proof: what we run</p>
+    <h2 class="narrow">Every screen here is a platform we built and operate.</h2>
+    <p class="lede on-dark narrow">These are not mock-ups. They are live systems on real records, in use today. A build for you starts from this code.</p>
+    <div class="grid grid-3 mt-lg">
+      <div>
+        <div class="shot">
+          <div class="frame-bar"><i></i><i></i><i></i><em>healthcare · data atlas</em><span class="live">live</span></div>
+          <img src="assets/shots/health/atlas.png" alt="Data Atlas listing datasets with row counts, source register, vintage and integrity status" loading="lazy">
+        </div>
+        <p class="shot-cap"><b>Healthcare &amp; Pharma platform.</b> Built and operated by us: the Data Atlas, nine lenses and Ask over 177 harmonised datasets.</p>
+      </div>
+      <div>
+        <div class="shot">
+          <div class="frame-bar"><i></i><i></i><i></i><em>trade · company profile</em><span class="live">live</span></div>
+          <img src="assets/shots/trade/dashboard-company.png" alt="Trade explorer company profile showing shipments, products, destinations and buyers for one exporter" loading="lazy">
+        </div>
+        <p class="shot-cap"><b>Trade Data platform.</b> Built and operated by us: shipment-level search, company and country profiles, flow analyser and global module.</p>
+      </div>
+      <div>
+        <div class="shot">
+          <div class="frame-bar"><i></i><i></i><i></i><em>ask · verified answer</em><span class="live">live</span></div>
+          <img src="assets/shots/nlq/ask.png" alt="Ask console answering a plain-English question with verified figures, entities and the query behind them" loading="lazy">
+        </div>
+        <p class="shot-cap"><b>NLQ · Ask.</b> Built and operated by us: the query service with its retrieval, validation and provenance gates, and a library of 657 verified questions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW A BUILD FITS TOGETHER ============ -->
+<section class="band-wash">
+  <div class="wrap">
+    <p class="eyebrow">How a build fits together</p>
+    <h2 class="narrow">Your registers, our registers, one platform.</h2>
+    <p class="lede narrow">Your internal data and our harmonised sources are resolved onto the same spine. The platform that reads it carries your brand. At the end you decide whether we keep running it or you take it over.</p>
+
+    <div class="frame mt-lg">
+      <div class="frame-bar"><i></i><i></i><i></i><em>build · registers in, your platform out</em><span class="live">live</span></div>
+      <svg viewBox="0 0 960 300" role="img" aria-label="Your registers and our registers are harmonised onto one spine, served through your branded platform of lenses, Ask and explorer, and then either run by us or owned by you.">
+        <rect class="fx-bg" width="960" height="300"/>
+
+        <text class="fx-txt-a" x="40" y="52">INPUTS · YOURS AND OURS</text>
+        <rect class="fx-panel" x="40" y="66" width="190" height="76" rx="10"/>
+        <text class="fx-txt-b" x="58" y="90" style="font-size:12px">YOUR REGISTERS</text>
+        <text class="fx-txt" x="58" y="110">sales · CRM · plants · files</text>
+        <text class="fx-txt" x="58" y="128">stays inside your deployment</text>
+        <rect class="fx-panel" x="40" y="158" width="190" height="76" rx="10"/>
+        <text class="fx-txt-b" x="58" y="182" style="font-size:12px">OUR REGISTERS</text>
+        <text class="fx-txt" x="58" y="202">177 datasets · 1.6mn+ shipments</text>
+        <text class="fx-txt-g" x="58" y="220">✓ authorised sources · vintaged</text>
+        <circle class="viz-dot" cx="214" cy="90" r="3" fill="#6FD3E2"/>
+        <circle class="viz-dot" cx="214" cy="182" r="3" fill="#2ECC8A"/>
+
+        <path class="fx-flow" d="M230,104 C255,104 255,150 280,150"/>
+        <path class="fx-flow" d="M230,196 C255,196 255,150 280,150"/>
+
+        <text class="fx-txt-a" x="280" y="52">HARMONISE</text>
+        <rect class="fx-hl" x="280" y="66" width="210" height="168" rx="10"/>
+        <text class="fx-txt-b" x="298" y="96" style="font-size:12px">ONE MOLECULE SPINE</text>
+        <line class="fx-rule" x1="298" y1="110" x2="472" y2="110"/>
+        <text class="fx-txt" x="298" y="132">resolve every source to one key</text>
+        <text class="fx-txt" x="298" y="154">max across grains, never sum</text>
+        <text class="fx-txt" x="298" y="176">marts prebuilt · vintage stamped</text>
+        <text class="fx-txt" x="298" y="198">integrity checks on each refresh</text>
+        <text class="fx-txt-m" x="298" y="222">read-only · capped per query</text>
+
+        <path class="fx-flow amber" d="M490,150 C515,150 515,90 540,90"/>
+        <path class="fx-flow amber" d="M490,150 L540,150"/>
+        <path class="fx-flow amber" d="M490,150 C515,150 515,210 540,210"/>
+
+        <text class="fx-txt-a" x="540" y="52">YOUR PLATFORM · YOUR BRAND</text>
+        <rect class="fx-panel" x="540" y="70" width="200" height="40" rx="8"/>
+        <text class="fx-txt-b" x="556" y="95">Lenses · decision views</text>
+        <rect class="fx-hl-m" x="540" y="130" width="200" height="40" rx="8"/>
+        <text class="fx-txt-b" x="556" y="155">Ask · verified answers</text>
+        <rect class="fx-panel" x="540" y="190" width="200" height="40" rx="8"/>
+        <text class="fx-txt-b" x="556" y="215">Explorer · shipments, profiles</text>
+
+        <path class="fx-flow green" d="M740,90 C765,90 765,104 790,104"/>
+        <path class="fx-flow green" d="M740,150 C765,150 765,104 790,104"/>
+        <path class="fx-flow green" d="M740,210 C765,210 765,196 790,196"/>
+
+        <text class="fx-txt-a" x="790" y="52">RUN IT OR OWN IT</text>
+        <rect class="fx-hl-g" x="790" y="66" width="130" height="76" rx="10"/>
+        <text class="fx-txt-b" x="806" y="92" style="font-size:12px">RUN IT</text>
+        <text class="fx-txt" x="806" y="112">managed by us</text>
+        <text class="fx-txt" x="806" y="128">refreshed on release</text>
+        <rect class="fx-hl-g" x="790" y="158" width="130" height="76" rx="10"/>
+        <text class="fx-txt-b" x="806" y="184" style="font-size:12px">OWN IT</text>
+        <text class="fx-txt" x="806" y="204">code handed over</text>
+        <text class="fx-txt" x="806" y="220">pipelines included</text>
+
+        <line class="fx-rule" x1="40" y1="262" x2="920" y2="262"/>
+        <text class="fx-txt" x="40" y="284">single-tenant · your data never leaves the deployment</text>
+        <text class="fx-txt-g" x="920" y="284" text-anchor="end">same number in every view · source and vintage shown</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STACK ============ -->
+<section>
+  <div class="wrap">
+    <div class="split">
+      <div>
+        <p class="eyebrow">Stack</p>
+        <h2>Ordinary, well-tested parts.</h2>
+        <p class="lede">Nothing exotic. The stack is chosen so that your own engineers can read it, run it and change it after handover.</p>
+        <ul class="chips mt-md">
+          <li><b>Next.js</b></li>
+          <li><b>React</b></li>
+          <li><b>TypeScript</b></li>
+          <li><b>DuckDB</b></li>
+          <li><b>PostgreSQL</b></li>
+          <li><b>FastAPI</b></li>
+          <li><b>Python</b></li>
+          <li><b>vector index</b> for entity and schema retrieval</li>
+          <li><b>model provider API</b> for drafting SQL</li>
+          <li><b>Playwright</b> end-to-end tests</li>
+          <li><b>Vitest</b> unit tests</li>
+        </ul>
+      </div>
+      <div>
+        <div class="panel">
+          <h3>How it is deployed</h3>
+          <p>Single-tenant: one deployment per client, on your infrastructure or ours, with nothing shared between clients. The warehouse is opened read-only; the platform reads, it never writes. Every query carries a time and memory cap, so one heavy question cannot slow the rest. Every answer is auditable: an Ask answer ships with its SQL and the rows it used, and every lens figure names its source and vintage. The text of a question goes to the model provider to draft SQL; your data does not.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ENGAGEMENT ============ -->
+<section class="band-wash">
+  <div class="wrap">
+    <p class="eyebrow">How an engagement runs</p>
+    <h2 class="narrow">Start on your questions. Finish with a platform you can run or own.</h2>
+    <p class="lede narrow">The spine, the lenses and the question library already exist. A build for you starts from them, which is why the first working screen is on your data, not on a sample.</p>
+
+    <div class="steps mt-lg">
+      <div class="step">
+        <div class="step-n">01</div>
+        <div>
+          <h3>Discovery on your question set</h3>
+          <p>You bring the questions your teams ask most. We map each one to the registers that answer it, the lenses it needs and the gaps in your data or ours. The output is a scope you can read in one sitting.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-n">02</div>
+        <div>
+          <h3>Build on your data</h3>
+          <p>Starting from our spine and lenses, we harmonise your registers onto the same key, build the marts your questions need and put your brand on the interface. Each figure carries its source and vintage from the first build.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-n">03</div>
+        <div>
+          <h3>Pilot with your team</h3>
+          <p>Your analysts use the platform on real work. Their questions go into the verified library. What they cannot answer becomes the next lens or the next mart. Nothing ships until it survives their use.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-n">04</div>
+        <div>
+          <h3>Run it or own it</h3>
+          <p>Managed by us, refreshed as registers are released, or handed over with the code, the pipelines and the tests so your engineers carry it forward. You choose at the end, not the start.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TWO WAYS TO OWN IT ============ -->
+<section class="band-dark gridbg">
+  <div class="wrap">
+    <p class="eyebrow on-dark">Two ways to own it</p>
+    <h2 class="narrow">Our platform, deployed for you. Or yours, built by us.</h2>
+    <p class="lede on-dark narrow">The difference is who the platform belongs to. Both sit on the same spine and pass the same checks.</p>
+    <div class="grid grid-2 mt-lg">
+      <article class="card on-dark">
+        <span class="card-tag">Option A</span>
+        <h3>Data + intelligence platform</h3>
+        <p>Our data packages and our platform, deployed privately for you. The lenses, the Data Atlas, Ask and the trade explorer, on your infrastructure or ours, refreshed as registers are released. Your internal registers can be added to the spine. We run it.</p>
+        <ul class="ticks on-dark" style="margin-top:16px">
+          <li><b>Fastest to a working screen.</b> The platform already exists; deployment is the work.</li>
+          <li><b>Your data stays inside.</b> Single-tenant, nothing shared with any other client.</li>
+        </ul>
+        <a class="more" href="data.html">See the data packages →</a>
+      </article>
+      <article class="card on-dark">
+        <span class="card-tag">Option B</span>
+        <h3>Your own platform</h3>
+        <p>Built under your brand, for your questions, on your data, ours or both. The data layer, the lenses you need, the query service and the explorer, delivered with the code, the pipelines and the tests. You own it and your engineers run it.</p>
+        <ul class="ticks on-dark" style="margin-top:16px">
+          <li><b>Code handed over.</b> Repositories, pipelines and test suites are yours.</li>
+          <li><b>Starts from what we run.</b> The spine and the lenses are the starting point, not the deliverable.</li>
+        </ul>
+        <a class="more" href="contact.html">Talk about a build →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section>
+  <div class="wrap">
+    <p class="eyebrow">Questions we are asked</p>
+    <h2 class="narrow">Before you ask for a build.</h2>
+    <div class="grid grid-2 mt-lg faq">
+      <div class="card"><h3>Do we own the code?</h3><p>Yes, when it is handed over. A platform built under your brand is delivered with its repositories, pipelines and tests, and it is yours from then on. A managed deployment of our platform stays ours; you own the data you bring to it.</p></div>
+      <div class="card"><h3>Can it run on our infrastructure?</h3><p>Yes. The platform is single-tenant and runs on your infrastructure or ours. Nothing in the stack depends on a particular host.</p></div>
+      <div class="card"><h3>Do we have to use your data?</h3><p>No. A build can run on your data alone, on ours alone, or on both harmonised onto the same spine. Our packages are available when they help and left out when they do not.</p></div>
+      <div class="card"><h3>Is anything sent outside?</h3><p>The text of a question goes to the model provider so it can draft SQL. Your data, the rows and the answers stay in the deployment.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="cta-band gridbg">
+  <div class="wrap">
+    <h2>Bring the questions. We bring the platform.</h2>
+    <p class="lede on-dark">Send the questions your teams ask most. We will show you, on the live system, how much of the answer already exists and what a build for you would add.</p>
+    <div class="btn-row">
+      <a class="btn btn-primary" href="contact.html">Talk about a build</a>
+      <a class="btn btn-ghost on-dark" href="products.html">See the platforms</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand"><img src="assets/mark-96.png" alt="" width="28" height="28"><span>TransData<b>Nexus</b></span></div>
+        <p>Pharma and healthcare consulting, intelligence platforms, data packages and platform development, built on authorised sources and run read-only.</p>
+      </div>
+      <div>
+        <h3>Products</h3>
+        <ul>
+          <li><a href="trade.html">Trade Data</a></li>
+          <li><a href="healthcare.html">Healthcare &amp; Pharma</a></li>
+          <li><a href="nlq.html">NLQ · Ask</a></li>
+          <li><a href="data.html">Data packages</a></li>
+          <li><a href="products.html">All products</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Consulting</h3>
+        <ul>
+          <li><a href="services.html#market-access">Market access</a></li>
+          <li><a href="services.html#regulatory">Regulatory</a></li>
+          <li><a href="services.html#patent">Patent &amp; exclusivity</a></li>
+          <li><a href="services.html#commercial">Commercial</a></li>
+          <li><a href="services.html#portfolio">Portfolio</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Company</h3>
+        <ul>
+          <li><a href="development.html">Platform development</a></li>
+          <li><a href="contact.html">Request a demo</a></li>
+          <li><a href="mailto:suresh@transdatanexus.com">suresh@transdatanexus.com</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="terms.html">Terms of use</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bot">
+      <span>© 2026 TransDataNexus. All rights reserved.</span>
+      <span>Mumbai, India</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/main.js"></script>
+</body>
+</html>
