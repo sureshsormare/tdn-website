@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TransDataNexus — Pharma, healthcare and trade intelligence</title>
+<meta name="description" content="Three products on one data layer: shipment-level trade intelligence, a US healthcare and pharma platform with nine decision lenses, and a natural-language query service that answers in verified numbers.">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/mark-96.png">
+<meta property="og:title" content="TransDataNexus — Pharma, healthcare and trade intelligence">
+<meta property="og:description" content="Shipment-level trade intelligence, a US healthcare platform with nine decision lenses, and a natural-language query service that answers in verified numbers.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sureshsormare.github.io/tdn-website/">
+<meta property="og:image" content="https://sureshsormare.github.io/tdn-website/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="assets/styles.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"TransDataNexus","url":"https://transdatanexus.com","description":"Pharma, healthcare and trade intelligence platforms built on authorised sources."}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html" aria-label="TransDataNexus home">
+      <img src="assets/mark-96.png" alt="" width="30" height="30">
+      <span>TransData<b>Nexus</b></span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+    <ul class="nav-links" id="nav">
+      <li><a href="trade.html">Trade Data</a></li>
+      <li><a href="healthcare.html">Healthcare &amp; Pharma</a></li>
+      <li><a href="nlq.html">NLQ</a></li>
+      <li><a href="services.html">Services</a></li>
+    </ul>
+    <div class="nav-cta"><a class="btn btn-primary" href="contact.html">Request a demo</a></div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero gridbg">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <p class="eyebrow on-dark">Pharma · Healthcare · Trade intelligence</p>
+        <h1>Connected intelligence for pharma and healthcare markets.</h1>
+        <p class="lede on-dark">Three products on one data layer: shipment-level trade intelligence, a US healthcare and pharma platform with nine decision lenses, and a natural-language query service that answers in verified numbers. Built from authorised sources, run as a read-only intelligence layer.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="contact.html">Request a demo</a>
+          <a class="btn btn-ghost on-dark" href="healthcare.html">See the lenses</a>
+        </div>
+      </div>
+
+      <div class="hero-viz">
+        <svg class="viz" viewBox="0 0 520 400" role="img" aria-label="Authorised sources flow into one molecule spine, which feeds the lenses, the Ask console, the trade explorer and the Data Atlas.">
+          <defs>
+            <linearGradient id="hub" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#14A6B8"/><stop offset="60%" stop-color="#1E88C7"/><stop offset="100%" stop-color="#F0A431"/>
+            </linearGradient>
+            <filter id="blur"><feGaussianBlur stdDeviation="18"/></filter>
+          </defs>
+          <ellipse class="viz-halo" cx="270" cy="200" rx="92" ry="80" fill="url(#hub)" filter="url(#blur)"/>
+
+          <!-- connectors in -->
+          <path class="viz-link" d="M126,80 C166,80 166,200 206,200"/>
+          <path class="viz-link" d="M126,160 C166,160 166,200 206,200"/>
+          <path class="viz-link" d="M126,240 C166,240 166,200 206,200"/>
+          <path class="viz-link" d="M126,320 C166,320 166,200 206,200"/>
+          <!-- connectors out -->
+          <path class="viz-link out" d="M334,200 C364,200 364,92 394,92"/>
+          <path class="viz-link out" d="M334,200 C364,200 364,164 394,164"/>
+          <path class="viz-link out" d="M334,200 C364,200 364,236 394,236"/>
+          <path class="viz-link out" d="M334,200 C364,200 364,308 394,308"/>
+
+          <!-- inputs -->
+          <g>
+            <rect class="viz-node" x="8" y="63" width="118" height="34" rx="9"/>
+            <text class="viz-label" x="67" y="80" text-anchor="middle" dominant-baseline="central">Shipment records</text>
+            <rect class="viz-node" x="8" y="143" width="118" height="34" rx="9"/>
+            <text class="viz-label" x="67" y="160" text-anchor="middle" dominant-baseline="central">Regulatory registers</text>
+            <rect class="viz-node" x="8" y="223" width="118" height="34" rx="9"/>
+            <text class="viz-label" x="67" y="240" text-anchor="middle" dominant-baseline="central">Spending &amp; claims</text>
+            <rect class="viz-node" x="8" y="303" width="118" height="34" rx="9"/>
+            <text class="viz-label" x="67" y="320" text-anchor="middle" dominant-baseline="central">Trials &amp; plants</text>
+          </g>
+
+          <!-- hub -->
+          <rect x="206" y="150" width="128" height="100" rx="16" fill="url(#hub)"/>
+          <rect x="206" y="150" width="128" height="100" rx="16" fill="rgba(7,26,34,.35)"/>
+          <text class="viz-hub-label" x="270" y="188" text-anchor="middle">Molecule spine</text>
+          <text class="viz-hub-sub" x="270" y="210" text-anchor="middle">ONE KEY · ONE TOTAL</text>
+          <circle class="viz-dot" cx="270" cy="232" r="3.5" fill="#fff"/>
+
+          <!-- outputs -->
+          <g>
+            <rect class="viz-node" x="394" y="75" width="118" height="34" rx="9"/>
+            <text class="viz-label out" x="453" y="92" text-anchor="middle" dominant-baseline="central">Nine lenses</text>
+            <rect class="viz-node" x="394" y="147" width="118" height="34" rx="9"/>
+            <text class="viz-label out" x="453" y="164" text-anchor="middle" dominant-baseline="central">Ask · NLQ</text>
+            <rect class="viz-node" x="394" y="219" width="118" height="34" rx="9"/>
+            <text class="viz-label out" x="453" y="236" text-anchor="middle" dominant-baseline="central">Trade explorer</text>
+            <rect class="viz-node" x="394" y="291" width="118" height="34" rx="9"/>
+            <text class="viz-label out" x="453" y="308" text-anchor="middle" dominant-baseline="central">Data Atlas</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat"><strong data-count="323.9" data-suffix="mn">323.9mn</strong><span>curated rows, counted from the data itself</span></div>
+      <div class="stat"><strong data-count="177">177</strong><span>datasets on the Data Atlas, 1939 to 2026</span></div>
+      <div class="stat"><strong data-count="1.6" data-suffix="mn+">1.6mn+</strong><span>verified shipment records, export and import</span></div>
+      <div class="stat"><strong data-count="9">9</strong><span>decision lenses over one molecule spine</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRODUCTS ============ -->
+<section class="band-wash">
+  <div class="wrap">
+    <p class="eyebrow">Three products · one data layer</p>
+    <h2 class="narrow">Everything sits on the same spine, so nothing disagrees.</h2>
+    <p class="lede narrow">Each product answers a different question. All three read the same resolved data, which is why a number in a lens, a number in the trade explorer and a number in an Ask answer are the same number.</p>
+
+    <div class="grid grid-3 mt-lg">
+      <article class="card card-shot">
+        <div class="shot-strip"><img src="assets/shots/trade/dashboard-trade-flow.png" alt="Trade flow analyser: paracetamol exports from India by destination and importer" loading="lazy"></div>
+        <div class="card-body">
+          <span class="card-tag">Product 01</span>
+          <h3>Trade Data</h3>
+          <p>Shipment-level pharmaceutical trade intelligence: who ships what, where, at what price, from India to the world, plus global bilateral flows by product and period.</p>
+          <a class="more" href="trade.html">Explore Trade Data →</a>
+        </div>
+      </article>
+      <article class="card card-shot">
+        <div class="shot-strip"><img src="assets/shots/health/journey-metformin.png" alt="Molecule journey lens for metformin across twelve data stages" loading="lazy"></div>
+        <div class="card-body">
+          <span class="card-tag">Product 02</span>
+          <h3>Healthcare &amp; Pharma</h3>
+          <p>US healthcare and pharma intelligence on a molecule spine: entry, supply, market access, competition, disease, facilities, regulatory and the full molecule journey, each as its own lens.</p>
+          <a class="more" href="healthcare.html">See the nine lenses →</a>
+        </div>
+      </article>
+      <article class="card card-shot">
+        <div class="shot-strip"><img src="assets/shots/nlq/ask.png" alt="Ask console answering a plain-English question with verified SQL and sources" loading="lazy"></div>
+        <div class="card-body">
+          <span class="card-tag">Product 03</span>
+          <h3>NLQ · Ask</h3>
+          <p>Ask in plain English. The service finds the right tables, writes and checks the SQL, runs it read-only, and verifies every number against the rows before it answers.</p>
+          <a class="more" href="nlq.html">How Ask verifies itself →</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VIDEO ============ -->
+<section class="band-dark gridbg">
+  <div class="wrap">
+    <div class="split split-narrow">
+      <div>
+        <p class="eyebrow on-dark">Walkthrough</p>
+        <h2>Watch the platform, not a slide about it.</h2>
+        <p class="lede on-dark">A recorded walkthrough of the US pharma and healthcare platform: the Data Atlas, the lenses, the molecule journey and the Ask console, on real data.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="contact.html">Request a live demo</a>
+        </div>
+      </div>
+      <div class="video">
+        <iframe src="https://www.youtube-nocookie.com/embed/xWdXi1I3tyM?rel=0&modestbranding=1" title="TransDataNexus teaser — AI-native US pharma and healthcare intelligence platform, full walkthrough" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MECHANISM ============ -->
+<section class="band-wash">
+  <div class="wrap">
+    <p class="eyebrow">The mechanism</p>
+    <h2 class="narrow">One molecule spine. Every number traceable.</h2>
+    <p class="lede narrow">Sources arrive on different grains: a shipment, a prescription, an approval, a plant. Each is resolved to one canonical molecule key before anything is counted, and overlapping registers are taken at their maximum rather than summed. That is what stops the same prescription being counted twice.</p>
+
+    <div class="frame mt-lg">
+      <div class="frame-bar"><i></i><i></i><i></i><em>system · one spine, three products</em><span class="live">live</span></div>
+      <svg viewBox="0 0 960 300" role="img" aria-label="Authorised sources are resolved to one molecule key, then served to lenses, Ask and the trade explorer.">
+        <rect class="fx-bg" width="960" height="300"/>
+
+        <!-- LAYER 01 · SOURCES -->
+        <text class="fx-txt-a" x="40" y="52">LAYER 01 · AUTHORISED SOURCES</text>
+        <rect class="fx-panel" x="40" y="66" width="230" height="168" rx="10"/>
+        <text class="fx-txt-b" x="60" y="96" style="font-size:12px">REGISTERS · RECORDS</text>
+        <line class="fx-rule" x1="60" y1="110" x2="250" y2="110"/>
+        <text class="fx-txt" x="60" y="132">spending · claims · prescribers</text>
+        <text class="fx-txt" x="60" y="154">approvals · patents · shortages</text>
+        <text class="fx-txt" x="60" y="176">plants · inspections · trials</text>
+        <text class="fx-txt" x="60" y="198">shipments · export and import</text>
+        <text class="fx-txt-g" x="60" y="222">✓ vintage stamped on every row</text>
+        <circle class="viz-dot" cx="246" cy="90" r="3" fill="#2ECC8A"/>
+
+        <!-- flows sources -> spine -->
+        <path class="fx-flow" d="M270,120 C310,120 310,150 350,150"/>
+        <path class="fx-flow" d="M270,180 C310,180 310,150 350,150"/>
+
+        <!-- LAYER 02 · SPINE -->
+        <text class="fx-txt-a" x="350" y="52">LAYER 02 · MOLECULE SPINE</text>
+        <rect class="fx-hl" x="350" y="66" width="240" height="168" rx="10"/>
+        <text class="fx-txt-b" x="370" y="96" style="font-size:12px">ONE KEY PER MOLECULE</text>
+        <line class="fx-rule" x1="370" y1="110" x2="570" y2="110"/>
+        <text class="fx-txt" x="370" y="132">resolve every source to canonical key</text>
+        <text class="fx-txt" x="370" y="154">max across grains, never sum</text>
+        <text class="fx-txt" x="370" y="176">one combo total per molecule</text>
+        <text class="fx-txt" x="370" y="198">marts prebuilt · read-only · capped</text>
+        <text class="fx-txt-m" x="370" y="222">no phantom prescriptions</text>
+        <circle class="viz-dot" cx="566" cy="90" r="3" fill="#6FD3E2"/>
+
+        <!-- flows spine -> products -->
+        <path class="fx-flow amber" d="M590,150 C640,150 640,86 690,86"/>
+        <path class="fx-flow amber" d="M590,150 L690,150"/>
+        <path class="fx-flow amber" d="M590,150 C640,150 640,214 690,214"/>
+
+        <!-- LAYER 03 · PRODUCTS -->
+        <text class="fx-txt-a" x="690" y="52">LAYER 03 · WHAT YOU USE</text>
+        <rect class="fx-panel" x="690" y="66" width="230" height="40" rx="8"/>
+        <text class="fx-txt-b" x="706" y="91">Nine lenses · Data Atlas</text>
+        <rect class="fx-hl-m" x="690" y="130" width="230" height="40" rx="8"/>
+        <text class="fx-txt-b" x="706" y="155">Ask · verified answers</text>
+        <rect class="fx-panel" x="690" y="194" width="230" height="40" rx="8"/>
+        <text class="fx-txt-b" x="706" y="219">Trade explorer · profiles</text>
+
+        <line class="fx-rule" x1="40" y1="262" x2="920" y2="262"/>
+        <text class="fx-txt" x="40" y="284">one spine · one total per molecule</text>
+        <text class="fx-txt-g" x="920" y="284" text-anchor="end">same number everywhere · source and vintage shown</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section>
+  <div class="wrap">
+    <p class="eyebrow">Services</p>
+    <h2 class="narrow">The questions pharma teams bring us.</h2>
+    <p class="lede narrow">Each service is a lens plus a person who knows the data. The output is evidence with its source and vintage, never a recommendation dressed as a number.</p>
+
+    <div class="grid grid-4 mt-lg">
+      <div class="card"><span class="card-num">01</span><h3>Market access</h3><p>Coverage, restrictions and the payer path for a molecule, by book and by plan.</p></div>
+      <div class="card"><span class="card-num">02</span><h3>Regulatory</h3><p>Approvals, shortages, recalls, inspections and citations, on the molecule and on the plant.</p></div>
+      <div class="card"><span class="card-num">03</span><h3>Patent &amp; exclusivity</h3><p>The cliff timeline, the challengers queued and when the door actually opens.</p></div>
+      <div class="card"><span class="card-num">04</span><h3>Commercial &amp; competitive</h3><p>Market share, the moat, rival supply and who is gaining paid volume.</p></div>
+      <div class="card"><span class="card-num">05</span><h3>Portfolio &amp; pipeline</h3><p>Entry opportunities ranked by prize, opening date and sourcing risk.</p></div>
+      <div class="card"><span class="card-num">06</span><h3>Supply &amp; sourcing</h3><p>Who makes it, where, with what inspection record, and how exposed the supply is.</p></div>
+      <div class="card"><span class="card-num">07</span><h3>Trade &amp; BD</h3><p>Shipment-level buyers, suppliers and corridors for a product or a company.</p></div>
+      <div class="card"><span class="card-num">08</span><h3>Disease &amp; demand</h3><p>Prevalence, patients, paid spend and the drugs that treat it, by state.</p></div>
+    </div>
+    <div class="btn-row">
+      <a class="btn btn-ghost" href="services.html">Full detail on each service →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRINCIPLES ============ -->
+<section class="band-dark gridbg">
+  <div class="wrap">
+    <p class="eyebrow on-dark">How it holds up</p>
+    <h2 class="narrow">Numbers you can put in front of a board.</h2>
+    <div class="grid grid-3 mt-lg">
+      <div class="card on-dark"><h3>Evidence, not advice</h3><p>Every figure carries its source and its vintage. The platform shows signals; the decision stays with you.</p></div>
+      <div class="card on-dark"><h3>Authorised sources only</h3><p>Registers, records and shipment data from authorised sources, counted from the data itself, never estimated.</p></div>
+      <div class="card on-dark"><h3>Read-only, verifiable</h3><p>Nothing writes back. Every Ask answer is checked against the rows it came from before you see it.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="cta-band gridbg">
+  <div class="wrap">
+    <h2>See it on your molecule first.</h2>
+    <p class="lede on-dark">Send one molecule or one product. We will walk you through what the platform already knows about it, on the live system.</p>
+    <div class="btn-row">
+      <a class="btn btn-primary" href="contact.html">Request a demo</a>
+      <a class="btn btn-ghost on-dark" href="healthcare.html">See the lenses</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand"><img src="assets/mark-96.png" alt="" width="28" height="28"><span>TransData<b>Nexus</b></span></div>
+        <p>Pharma, healthcare and trade intelligence platforms, built on authorised sources and served as a read-only intelligence layer.</p>
+      </div>
+      <div>
+        <h3>Products</h3>
+        <ul>
+          <li><a href="trade.html">Trade Data</a></li>
+          <li><a href="healthcare.html">Healthcare &amp; Pharma</a></li>
+          <li><a href="nlq.html">NLQ · Ask</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Services</h3>
+        <ul>
+          <li><a href="services.html#market-access">Market access</a></li>
+          <li><a href="services.html#regulatory">Regulatory</a></li>
+          <li><a href="services.html#patent">Patent &amp; exclusivity</a></li>
+          <li><a href="services.html#commercial">Commercial</a></li>
+          <li><a href="services.html#portfolio">Portfolio</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Company</h3>
+        <ul>
+          <li><a href="contact.html">Request a demo</a></li>
+          <li><a href="mailto:info@transdatanexus.com">info@transdatanexus.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bot">
+      <span>© 2026 TransDataNexus. All rights reserved.</span>
+      <span>Nagpur, India</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/main.js"></script>
+</body>
+</html>

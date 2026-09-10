@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NLQ · Ask — TransDataNexus</title>
+<meta name="description" content="Ask a question in plain English about US pharma and healthcare data. The service finds the right tables, writes and checks the SQL, runs it read-only, and verifies every number before it answers.">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/mark-96.png">
+<meta property="og:title" content="NLQ · Ask — TransDataNexus">
+<meta property="og:description" content="Plain-English questions, answered in verified numbers with their sources.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sureshsormare.github.io/tdn-website/nlq.html">
+<meta property="og:image" content="https://sureshsormare.github.io/tdn-website/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="assets/styles.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"TransDataNexus","url":"https://transdatanexus.com","description":"Pharma, healthcare and trade intelligence platforms built on authorised sources."}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html" aria-label="TransDataNexus home">
+      <img src="assets/mark-96.png" alt="" width="30" height="30">
+      <span>TransData<b>Nexus</b></span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+    <ul class="nav-links" id="nav">
+      <li><a href="trade.html">Trade Data</a></li>
+      <li><a href="healthcare.html">Healthcare &amp; Pharma</a></li>
+      <li><a href="nlq.html" aria-current="page">NLQ</a></li>
+      <li><a href="services.html">Services</a></li>
+    </ul>
+    <div class="nav-cta"><a class="btn btn-primary" href="contact.html">Request a demo</a></div>
+  </div>
+</header>
+
+<!-- ============ PAGE HEAD ============ -->
+<section class="page-head gridbg">
+  <div class="wrap">
+    <p class="eyebrow on-dark">Product 03 · NLQ</p>
+    <h1>Ask in English. Get a number you can check.</h1>
+    <p class="lede on-dark">The Ask console turns a plain question into a verified answer. It finds the right tables, writes and checks the SQL, runs it read-only against the same spine the lenses use, and confirms every figure against the rows that came back before you see it.</p>
+    <div class="hero-stats">
+      <div class="stat"><strong data-count="657">657</strong><span>verified questions in the library, by persona and by lens</span></div>
+      <div class="stat"><strong data-count="32473">32,473</strong><span>drugs indexed for grounding</span></div>
+      <div class="stat"><strong data-count="30290">30,290</strong><span>manufacturers indexed for grounding</span></div>
+      <div class="stat"><strong data-count="73809">73,809</strong><span>pharmacies indexed, with hospitals and care sites</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TYPED DEMO ============ -->
+<section class="band-wash">
+  <div class="wrap">
+    <p class="eyebrow">A real question, on the live system</p>
+    <h2 class="narrow">One question in, a sourced answer out.</h2>
+    <p class="lede narrow">This is the question below, exactly as it was asked, and the answer the console returned. The stages in between are the checks that ran before the number was shown.</p>
+
+    <div class="split mt-lg" data-typed-demo>
+      <div class="ask">
+        <div class="ask-q"><span class="k">ask ›</span><span data-type="Who are the reliable Indian suppliers for apixaban that don't have any import alerts?"></span><span class="caret" aria-hidden="true"></span></div>
+        <div class="ask-a" data-answer>
+          <div class="row"><b>retrieve</b><span>molecule: apixaban · registers: drug master files, import alerts</span></div>
+          <div class="row"><b>plan</b><span>one step · supplier grain · exclude firms on an import alert</span></div>
+          <div class="row"><b>sql</b><span>SELECT only · columns checked against the live catalogue</span></div>
+          <div class="row"><b>execute</b><span>read-only · 0.39 s · 51 rows returned</span></div>
+          <div class="row"><b>verify</b><span class="ok">✓ every figure below traces to a returned row</span></div>
+          <p class="ans"><strong>51 supplier-DMF records across 51 distinct suppliers.</strong> The alert-free Indian supplier set for apixaban is broad and evenly distributed: every returned supplier carries a product count of one, so the signal is breadth of coverage, not concentration. Leading names include Alembic, Morepen and Metrochem, with several legal entities under the same corporate families.</p>
+          <p class="src">sources · drug master file register · import alert list · vintage shown in the console</p>
+        </div>
+      </div>
+      <div>
+        <div class="shot">
+          <div class="frame-bar"><i></i><i></i><i></i><em>ask console · answered</em><span class="live">live</span></div>
+          <img src="assets/shots/nlq/ask.png" alt="Ask console showing the answer for alert-free Indian apixaban suppliers: 51 supplier-DMF records, a summary, bullet points naming Alembic, Morepen and Metrochem, a bar chart of product count by supplier and a donut of share by DMF number" loading="lazy">
+        </div>
+        <p class="shot-cap"><b>The same answer in the console.</b> Headline figures, a written summary, the entities named, and charts drawn from the returned rows. Expand “Data &amp; SQL” under any answer to see the query and the rows.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW AN ANSWER IS BUILT ============ -->
+<section>
+  <div class="wrap">
+    <p class="eyebrow">How an answer is built</p>
+    <h2 class="narrow">Six stages. Each one can stop the answer.</h2>
+    <p class="lede narrow">The language model drafts; the system checks. Nothing reaches you that has not passed every stage below.</p>
+
+    <div class="steps mt-lg">
+      <div class="step"><span class="step-n">01</span><div><h3>Retrieve</h3><p>The question is matched against vector indexes of drugs, drug classes, manufacturers, hospitals, pharmacies and care sites, and against schema cards that describe each table. Only the cards the question needs are loaded, not the whole schema.</p></div></div>
+      <div class="step"><span class="step-n">02</span><div><h3>Plan</h3><p>A compound question is broken into ordered steps. When one step depends on another, the cohort from the first is piped into the second, so “of those, which…” means exactly those.</p></div></div>
+      <div class="step"><span class="step-n">03</span><div><h3>Write the SQL</h3><p>The query is written against a curated schema with the cross-cutting rules always on: one molecule key, maximum across overlapping registers, never a sum across grains.</p></div></div>
+      <div class="step"><span class="step-n">04</span><div><h3>Validate</h3><p>The SQL is parsed, restricted to SELECT, and every column is checked against the live catalogue. A query that fails is repaired once, then refused.</p></div></div>
+      <div class="step"><span class="step-n">05</span><div><h3>Execute</h3><p>Read-only, with a timeout and a memory cap on every statement. The service never writes to the warehouse.</p></div></div>
+      <div class="step"><span class="step-n">06</span><div><h3>Verify, then answer</h3><p>A scope guard refuses a number whose SQL dropped a filter the question asked for. A provenance guard checks that every figure in the written answer appears in the returned rows. Only then is the answer shown, with its sources.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PIPELINE DIAGRAM ============ -->
+<section class="band-wash">
+  <div class="wrap">
+    <p class="eyebrow">The pipeline</p>
+    <h2 class="narrow">Grounded before, checked after.</h2>
+    <p class="lede narrow">Retrieval grounds the question in real entities and real tables before any SQL is written. Verification checks the answer against the rows after it is run. The model sits between two gates it does not control.</p>
+
+    <div class="frame mt-lg">
+      <div class="frame-bar"><i></i><i></i><i></i><em>ask · pipeline, live</em><span class="live">live</span></div>
+      <svg viewBox="0 0 960 300" role="img" aria-label="A question passes through retrieve, plan, SQL, validate, execute and verify stages before an answer is shown; failures route to a clarification card.">
+        <rect class="fx-bg" width="960" height="300"/>
+
+        <text class="fx-txt-a" x="40" y="52">QUESTION</text>
+        <rect class="fx-panel" x="40" y="66" width="150" height="60" rx="10"/>
+        <text class="fx-txt-b" x="56" y="92">plain English</text>
+        <text class="fx-txt" x="56" y="110">“which suppliers…”</text>
+
+        <path class="fx-flow" d="M190,96 L232,96"/>
+
+        <text class="fx-txt-a" x="232" y="52">GROUNDING</text>
+        <rect class="fx-hl" x="232" y="66" width="200" height="130" rx="10"/>
+        <text class="fx-txt-b" x="248" y="92">retrieve · plan</text>
+        <line class="fx-rule" x1="248" y1="104" x2="416" y2="104"/>
+        <text class="fx-txt" x="248" y="124">entities: 32,473 drugs</text>
+        <text class="fx-txt" x="248" y="142">30,290 manufacturers</text>
+        <text class="fx-txt" x="248" y="160">schema cards, not the schema</text>
+        <text class="fx-txt-m" x="248" y="182">steps + piped cohorts</text>
+        <circle class="viz-dot" cx="418" cy="80" r="3" fill="#6FD3E2"/>
+
+        <path class="fx-flow" d="M432,130 L474,130"/>
+
+        <text class="fx-txt-a" x="474" y="52">MODEL</text>
+        <rect class="fx-panel" x="474" y="66" width="150" height="130" rx="10"/>
+        <text class="fx-txt-b" x="490" y="92">write SQL</text>
+        <line class="fx-rule" x1="490" y1="104" x2="608" y2="104"/>
+        <text class="fx-txt" x="490" y="124">one molecule key</text>
+        <text class="fx-txt" x="490" y="142">max, never sum</text>
+        <text class="fx-txt" x="490" y="160">SELECT only</text>
+        <text class="fx-txt-m" x="490" y="182">drafts, does not decide</text>
+
+        <path class="fx-flow amber" d="M624,130 L666,130"/>
+
+        <text class="fx-txt-a" x="666" y="52">GATES</text>
+        <rect class="fx-hl-g" x="666" y="66" width="200" height="130" rx="10"/>
+        <text class="fx-txt-b" x="682" y="92">validate · execute · verify</text>
+        <line class="fx-rule" x1="682" y1="104" x2="850" y2="104"/>
+        <text class="fx-txt" x="682" y="124">parsed · catalogue-checked</text>
+        <text class="fx-txt" x="682" y="142">read-only · capped · timed</text>
+        <text class="fx-txt" x="682" y="160">scope guard · provenance guard</text>
+        <text class="fx-txt-g" x="682" y="182">✓ figures trace to rows</text>
+        <circle class="viz-dot" cx="852" cy="80" r="3" fill="#2ECC8A"/>
+
+        <path class="fx-flow green" d="M866,130 C900,130 900,232 866,232"/>
+        <rect class="fx-hl-m" x="666" y="212" width="200" height="40" rx="8"/>
+        <text class="fx-txt-b" x="682" y="237">answer · with sources · vintage</text>
+
+        <path class="fx-flow amber" d="M766,196 C766,206 700,206 700,212"/>
+        <rect class="fx-ghost" x="474" y="212" width="150" height="40" rx="8"/>
+        <text class="fx-txt" x="490" y="237">clarify card, if it cannot</text>
+        <path class="fx-flow amber" d="M666,232 L624,232"/>
+
+        <line class="fx-rule" x1="40" y1="272" x2="920" y2="272"/>
+        <text class="fx-txt" x="40" y="290">the model drafts between two gates it does not control</text>
+        <text class="fx-txt-g" x="920" y="290" text-anchor="end">no number without a row behind it</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHEN IT WILL NOT ANSWER ============ -->
+<section class="band-dark gridbg">
+  <div class="wrap">
+    <p class="eyebrow on-dark">When it will not answer</p>
+    <h2 class="narrow">A clarification beats a confident wrong number.</h2>
+    <p class="lede on-dark narrow">Three situations stop an answer on purpose. In each, you get a card that says what is missing and offers a one-click fix, instead of a figure that looks right and is not.</p>
+    <div class="grid grid-3 mt-lg">
+      <div class="card on-dark"><span class="card-num">01</span><h3>The premise fails</h3><p>The question assumes something the data does not hold, such as a brand that has no generic yet. The console asks which of the things it did find you meant.</p></div>
+      <div class="card on-dark"><span class="card-num">02</span><h3>A scope was dropped</h3><p>The SQL lost a filter the question required, a state, a year, a payer. The scope guard refuses the number rather than serve a wider one.</p></div>
+      <div class="card on-dark"><span class="card-num">03</span><h3>A figure has no row</h3><p>The written answer mentions a number that is not in the returned rows. The provenance guard removes it before the answer is shown.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONSOLE + LIBRARY ============ -->
+<section>
+  <div class="wrap">
+    <div class="svc-row">
+      <div class="svc-media">
+        <div class="shot">
+          <div class="frame-bar"><i></i><i></i><i></i><em>ask console · question library</em></div>
+          <img src="assets/shots/nlq/ask-console.png" alt="Ask console with the question library on the left grouped by persona, the question box in the centre, suggested questions and headline data counts" loading="lazy">
+        </div>
+        <p class="shot-cap"><b>The console.</b> A library of 657 verified questions grouped by persona and by lens, a question box, and the lenses one click away.</p>
+      </div>
+      <div class="svc-body">
+        <span class="svc-idx">Alongside the lenses</span>
+        <h2>Start from a question, or from a screen.</h2>
+        <p class="lede">Every lens has an “ask about this” link that opens the console with the question pre-filled, so a number on screen can be interrogated without leaving it. Every answer has a “Data &amp; SQL” panel, so a number in the console can be traced to its rows.</p>
+        <ul class="ticks">
+          <li><b>Three depths.</b> Standard, detailed and deep-dive change how far the plan goes, not how careful it is.</li>
+          <li><b>Follow-ups keep context.</b> The cohort from the last answer is available to the next question.</li>
+          <li><b>A golden bank keeps it honest.</b> Hundreds of question, SQL and answer triples are re-run to catch drift when data or models change.</li>
+          <li><b>Read-only by construction.</b> The service holds the warehouse open for reading and nothing else.</li>
+        </ul>
+        <div class="adds"><b>What this gives you</b>An analyst-grade answer in seconds, with the query and the rows attached, so the number can be defended by someone who was not in the room.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="cta-band gridbg">
+  <div class="wrap">
+    <h2>Ask it about your molecule.</h2>
+    <p class="lede on-dark">Send one question you would want answered. We will run it on the live console and show you the answer, the query and the rows.</p>
+    <div class="btn-row">
+      <a class="btn btn-primary" href="contact.html">Request a demo</a>
+      <a class="btn btn-ghost on-dark" href="healthcare.html">See the lenses</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand"><img src="assets/mark-96.png" alt="" width="28" height="28"><span>TransData<b>Nexus</b></span></div>
+        <p>Pharma, healthcare and trade intelligence platforms, built on authorised sources and served as a read-only intelligence layer.</p>
+      </div>
+      <div>
+        <h3>Products</h3>
+        <ul>
+          <li><a href="trade.html">Trade Data</a></li>
+          <li><a href="healthcare.html">Healthcare &amp; Pharma</a></li>
+          <li><a href="nlq.html">NLQ · Ask</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Services</h3>
+        <ul>
+          <li><a href="services.html#market-access">Market access</a></li>
+          <li><a href="services.html#regulatory">Regulatory</a></li>
+          <li><a href="services.html#patent">Patent &amp; exclusivity</a></li>
+          <li><a href="services.html#commercial">Commercial</a></li>
+          <li><a href="services.html#portfolio">Portfolio</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Company</h3>
+        <ul>
+          <li><a href="contact.html">Request a demo</a></li>
+          <li><a href="mailto:info@transdatanexus.com">info@transdatanexus.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bot">
+      <span>© 2026 TransDataNexus. All rights reserved.</span>
+      <span>Nagpur, India</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/main.js"></script>
+</body>
+</html>
