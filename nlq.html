@@ -65,12 +65,14 @@
     <div class="split mt-lg" data-typed-demo>
       <div class="ask">
         <div class="ask-q"><span class="k">ask ›</span><span data-type="Who are the reliable Indian suppliers for apixaban that don't have any import alerts?"></span><span class="caret" aria-hidden="true"></span></div>
-        <div class="ask-a" data-answer>
+        <div class="ask-a is-in" style="padding-bottom:0">
           <div class="row"><b>retrieve</b><span>molecule: apixaban · registers: drug master files, import alerts</span></div>
           <div class="row"><b>plan</b><span>one step · supplier grain · exclude firms on an import alert</span></div>
           <div class="row"><b>sql</b><span>SELECT only · columns checked against the live catalogue</span></div>
           <div class="row"><b>execute</b><span>read-only · 0.39 s · 51 rows returned</span></div>
           <div class="row"><b>verify</b><span class="ok">✓ every figure below traces to a returned row</span></div>
+        </div>
+        <div class="ask-a" data-answer style="padding-top:0">
           <p class="ans"><strong>51 supplier-DMF records across 51 distinct suppliers.</strong> The alert-free Indian supplier set for apixaban is broad and evenly distributed: every returned supplier carries a product count of one, so the signal is breadth of coverage, not concentration. Leading names include Alembic, Morepen and Metrochem, with several legal entities under the same corporate families.</p>
           <p class="src">sources · drug master file register · import alert list · vintage shown in the console</p>
         </div>

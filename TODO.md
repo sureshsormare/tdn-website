@@ -14,7 +14,7 @@ Phase 2 — Trade Data page (diagram + 5 real screenshots) — [x] done
 Phase 3 — Healthcare & Pharma page (nine-lens layer panel, Data Atlas counts, lens tabs with 8 screenshots) — [x] done
 Phase 4 — NLQ page (question → verify → answer pipeline, typed demo, fresh Ask console screenshot) — [x] done (real answer: 51 alert-free apixaban suppliers, 0.39 s)
 Phase 5 — Services page + Demo request (FormSubmit → info@transdatanexus.com → thanks page) — [x] done
-Phase 6 — [ ] QA (links, forbidden words, 3 widths, reduced motion, weight), sitemap/robots, deploy to GitHub Pages, verify live
+Phase 6 — [x] QA (links, forbidden words, 3 widths, reduced motion, weight), sitemap/robots, deploy to GitHub Pages, verify live
 
 Post-launch
 - [ ] Activate FormSubmit: submit the form once, then click the confirmation link that arrives at info@transdatanexus.com
